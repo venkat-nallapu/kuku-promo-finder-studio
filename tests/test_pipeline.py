@@ -347,3 +347,31 @@ def test_cold_open_stitch_monotonic_bounds_and_word_safe_rationale() -> None:
         assert "int'" not in item["rationale"]
 
 
+def test_streamlit_cloud_missing_zip_hydration(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Regression test: verify Streamlit Cloud hydration when the confidential .zip is absent."""
+    import app
+    import streamlit.testing.v1 as st_test
+
+    episodes, raw_cands, lore_tokens = app.load_cached_pack.__wrapped__("missing.zip")
+    assert len(episodes) == 50
+    assert len(raw_cands) >= 50
+    assert round(sum(e.total_duration_sec for e in episodes) / 60.0, 1) == 102.7
+
+    # Force Path.exists() to return False for the confidential .zip so AppTest executes the exact Streamlit Cloud branch
+    orig_exists = Path.exists
+
+    def fake_exists(self: Path) -> bool:
+        if self.name.endswith(".zip"):
+            return False
+        return orig_exists(self)
+
+    monkeypatch.setattr(Path, "exists", fake_exists)
+    app_path = Path(__file__).resolve().parent.parent / "app.py"
+    at = st_test.AppTest.from_file(str(app_path), default_timeout=30)
+    at.run()
+    assert not at.exception
+    assert len(at.tabs) == 4
+
+
+
+

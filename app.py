@@ -33,6 +33,7 @@ from src.candidates import (
 from src.llm_judge import score_candidates_with_judge
 from src.parser import (
     EpisodeScript,
+    SceneMeta,
     extract_speaker_lore_tokens,
     load_episodes_from_zip,
     load_synthetic_demo_episodes,
@@ -81,21 +82,29 @@ def load_cached_pack(zip_path_str: str) -> Tuple[List[EpisodeScript], List[Promo
         heat_by_ep = {int(h["episode_num"]): h for h in pre.get("heatmap", [])}
         episodes = []
         for ep_num in range(1, 51):
-            if ep_num <= len(demo_eps):
-                base_ep = demo_eps[ep_num - 1]
-                episodes.append(base_ep)
-            else:
-                h = heat_by_ep.get(ep_num, {})
-                episodes.append(
-                    EpisodeScript(
-                        episode_num=ep_num,
-                        filename=f"Episode {ep_num}.txt",
-                        title=f"Episode {ep_num}",
-                        total_duration_sec=float(h.get("episode_duration_sec", 120.0)),
-                        cues=demo_eps[0].cues,
-                        scenes=demo_eps[0].scenes,
-                    )
+            h = heat_by_ep.get(ep_num, {})
+            base_ep = demo_eps[(ep_num - 1) % len(demo_eps)]
+            total_dur = float(h.get("total_duration_sec", base_ep.total_duration_sec))
+            episodes.append(
+                EpisodeScript(
+                    episode_num=ep_num,
+                    episode_id=f"EP_{ep_num:03d}",
+                    filename=str(h.get("filename", f"Episode {ep_num}.txt")),
+                    logline=base_ep.logline,
+                    continuity_notes=base_ep.continuity_notes,
+                    scenes=[
+                        SceneMeta(
+                            scene_num=1,
+                            heading="SCENE 01",
+                            raw_start_sec=0.0,
+                            raw_end_sec=total_dur,
+                            norm_start_sec=0.0,
+                            norm_end_sec=total_dur,
+                        )
+                    ],
+                    cues=base_ep.cues,
                 )
+            )
         return episodes, cands, sorted(lore_set)
 
     cands, lore = build_all_candidates(demo_eps, max_single_per_episode=3, include_stitched=True)
@@ -448,7 +457,10 @@ def main() -> None:
     with tab3:
         st.subheader("▸ Quality Judgement: Where Naive AI Gets It Wrong & Live Model-Swap Diff")
         naive_bench = compute_naive_vs_hybrid_benchmark(episodes, top20)
-        model_diff = compute_model_swap_diff(raw_cands)
+        if is_cloud_precomputed and (RAW_OUTPUTS_DIR / "model_swap_diff.json").exists():
+            model_diff = json.loads((RAW_OUTPUTS_DIR / "model_swap_diff.json").read_text(encoding="utf-8"))
+        else:
+            model_diff = compute_model_swap_diff(raw_cands)
 
         sm = naive_bench["summary_metrics"]
         m1, m2, m3, m4 = st.columns(4)
