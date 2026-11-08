@@ -1,0 +1,15 @@
+# Kuku Confidentiality Guard (Assignment p. 5: Do not share this document or the datasets publicly)
+*.zip
+Kuku*Assignment.pdf
+scripts_extracted/
+data/raw_scripts/
+
+# Local Virtualenv, Cache & QA Reports
+.venv/
+.cache/
+.gstack/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.streamlit/secrets.toml
+.gstack/
