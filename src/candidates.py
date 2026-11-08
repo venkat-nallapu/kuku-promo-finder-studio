@@ -738,21 +738,33 @@ def score_window_structural(
         opening_hook_line = f"({c0.start_str}) [{c0.track}] {c0.text}"
 
     # Combine final spoken dialogue line in cliff_cues with any trailing SOUND_FX sting
+    dlg_in_win = [c for c in win_cues if c.track == "DIALOGUE"]
     last_dlg_cliff = next(
         (c for c in reversed(cliff_cues) if c.track == "DIALOGUE"), None
     )
     last_sfx_cliff = next(
         (c for c in reversed(cliff_cues) if c.track == "SOUND_FX"), None
     )
-    if last_dlg_cliff and last_sfx_cliff:
-        closing_cliffhanger_line = (
-            f"({last_dlg_cliff.start_str}-{last_dlg_cliff.end_str}) {last_dlg_cliff.speaker}: {last_dlg_cliff.text} "
-            f"+ [{last_sfx_cliff.start_str} SOUND_FX] {last_sfx_cliff.text}"
+    if last_dlg_cliff is not None:
+        dlg_start_str = last_dlg_cliff.start_str
+        dlg_text = last_dlg_cliff.text
+        if is_continuation_dialogue_cue(last_dlg_cliff) and len(dlg_in_win) >= 2:
+            idx_last = next(
+                (i for i, c in enumerate(dlg_in_win) if c is last_dlg_cliff), -1
+            )
+            if idx_last > 0:
+                prev_dlg = dlg_in_win[idx_last - 1]
+                dlg_start_str = prev_dlg.start_str
+                dlg_text = f"{prev_dlg.text.rstrip('\"')} {last_dlg_cliff.text.lstrip('\"')}"
+        dlg_summary = (
+            f"({dlg_start_str}-{last_dlg_cliff.end_str}) {last_dlg_cliff.speaker}: {dlg_text}"
         )
-    elif last_dlg_cliff:
-        closing_cliffhanger_line = (
-            f"({last_dlg_cliff.start_str}-{last_dlg_cliff.end_str}) {last_dlg_cliff.speaker}: {last_dlg_cliff.text}"
-        )
+        if last_sfx_cliff:
+            closing_cliffhanger_line = (
+                f"{dlg_summary} + [{last_sfx_cliff.start_str} SOUND_FX] {last_sfx_cliff.text}"
+            )
+        else:
+            closing_cliffhanger_line = dlg_summary
     elif last_sfx_cliff:
         closing_cliffhanger_line = (
             f"({last_sfx_cliff.start_str}-{last_sfx_cliff.end_str}) [SOUND_FX] {last_sfx_cliff.text}"
@@ -865,8 +877,10 @@ def generate_episode_candidates(
     speaker_lore_tokens: Set[str],
     next_episode: Optional[EpisodeScript] = None,
     max_per_episode: int = 3,
+    min_duration: float = MIN_PROMO_DURATION,
+    max_duration: float = MAX_PROMO_DURATION,
 ) -> List[PromoCandidate]:
-    """Generate top-K deduplicated, dialogue-safe 20.0s-60.0s promo windows for an episode."""
+    """Generate top-K deduplicated, dialogue-safe promo windows for an episode."""
     dialogue_cues = episode.dialogue_cues
 
     # Collect all dialogue-safe cut points from cue starts and ends
@@ -900,7 +914,7 @@ def generate_episode_candidates(
     for s_sec in filtered_starts:
         for e_sec in raw_ends:
             dur = round(e_sec - s_sec, 2)
-            if MIN_PROMO_DURATION <= dur <= MAX_PROMO_DURATION:
+            if min_duration <= dur <= max_duration:
                 cand = score_window_structural(
                     episode=episode,
                     start_sec=s_sec,
@@ -909,12 +923,23 @@ def generate_episode_candidates(
                     next_episode=next_episode,
                     materialize_text=False,
                 )
+                if min_duration != MIN_PROMO_DURATION or max_duration != MAX_PROMO_DURATION:
+                    cand.duration_pacing_fit = 18.0
+                    cand.stage1_score = round(
+                        cand.hook_velocity
+                        + cand.conflict_escalation
+                        + cand.cliffhanger_peak
+                        + cand.standalone_clarity
+                        + cand.duration_pacing_fit,
+                        2,
+                    )
+                    cand.final_score = cand.stage1_score
                 all_windows.append(cand)
 
     # Fallback if an episode has ultra-sparse dialogue boundaries
-    if not all_windows and episode.total_duration_sec >= MIN_PROMO_DURATION:
+    if not all_windows and episode.total_duration_sec >= min_duration:
         s_sec = 0.0
-        e_sec = min(MAX_PROMO_DURATION, episode.total_duration_sec)
+        e_sec = min(max_duration, episode.total_duration_sec)
         all_windows.append(
             score_window_structural(
                 episode=episode,
@@ -927,7 +952,7 @@ def generate_episode_candidates(
         )
 
     winners = nms_deduplicate(all_windows, max_keep=max_per_episode)
-    return [
+    materialized = [
         score_window_structural(
             episode=episode,
             start_sec=w.start_sec,
@@ -940,6 +965,19 @@ def generate_episode_candidates(
         )
         for w in winners
     ]
+    if min_duration != MIN_PROMO_DURATION or max_duration != MAX_PROMO_DURATION:
+        for m in materialized:
+            m.duration_pacing_fit = 18.0
+            m.stage1_score = round(
+                m.hook_velocity
+                + m.conflict_escalation
+                + m.cliffhanger_peak
+                + m.standalone_clarity
+                + m.duration_pacing_fit,
+                2,
+            )
+            m.final_score = m.stage1_score
+    return materialized
 
 
 def generate_stitched_candidates(

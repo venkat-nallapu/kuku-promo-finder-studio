@@ -44,10 +44,19 @@ RAW_OUTPUTS_DIR = Path("raw_outputs")
 
 st.set_page_config(
     page_title="Kuku Promo Finder Studio | AI Generalist Prototype",
-    page_icon="🎬",
+    page_icon="★",
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
+PROVIDER_LABELS = {
+    "semantic_reranker": "Semantic AI",
+    "heuristic": "Heuristic",
+    "gemini": "Gemini 2.5",
+    "openai": "GPT-4o-mini",
+    "anthropic": "Claude Haiku",
+    "cli": "Claude CLI",
+}
 
 
 @st.cache_data(show_spinner=False)
@@ -84,11 +93,20 @@ def main() -> None:
     # Header Banner
     st.markdown(
         """
-        <div style="background: linear-gradient(90deg, #111827 0%, #1e293b 100%); padding: 1.2rem 1.5rem; border-radius: 10px; border-left: 5px solid #f59e0b; margin-bottom: 1rem;">
-            <h2 style="color: #f8fafc; margin: 0; font-size: 1.65rem;">🎬 Kuku Promo Finder Studio — Two-Stage Hybrid Ad Cut Engine</h2>
+        <style>
+        .hero-banner code {
+            background: rgba(255, 255, 255, 0.14) !important;
+            color: #f8fafc !important;
+            padding: 2px 6px !important;
+            border-radius: 4px !important;
+            font-size: 0.88rem !important;
+        }
+        </style>
+        <div class="hero-banner" style="background: linear-gradient(90deg, #111827 0%, #1e293b 100%); padding: 1.2rem 1.5rem; border-radius: 10px; border-left: 5px solid #f59e0b; margin-bottom: 1rem;">
+            <h2 style="color: #f8fafc; margin: 0; font-size: 1.65rem;">★ Kuku Promo Finder Studio: Two-Stage Hybrid Ad Cut Engine</h2>
             <p style="color: #cbd5e1; margin: 0.35rem 0 0 0; font-size: 0.95rem;">
                 <strong>Problem 1: Find the Promos (Ads)</strong> &bull; 4-Track Concurrent Screenplay Parser (<code>CAMERA</code> / <code>ACTION</code> / <code>SOUND FX</code> / <code>DIALOGUE</code>)
-                &bull; Dialogue-Safe <code>20.0s–60.0s</code> Cut Enforcer &bull; Cross-Episode <code>Episode N+1</code> Payoff Extractor &bull; Swappable Stage-2 AI Judge
+                &bull; Dialogue-Safe <code>20.0s-60.0s</code> Cut Enforcer &bull; Cross-Episode <code>Episode N+1</code> Payoff Extractor &bull; Swappable Stage-2 AI Judge
             </p>
         </div>
         """,
@@ -97,7 +115,7 @@ def main() -> None:
 
     # Sidebar Controls
     with st.sidebar:
-        st.header("⚙️ Studio Controls")
+        st.header("⚙ Studio Controls")
 
         provider_choice = st.selectbox(
             "Stage-2 AI Judge Provider (Model Swap)",
@@ -124,7 +142,7 @@ def main() -> None:
         )
 
         st.divider()
-        st.subheader("📂 Upload New Show (.zip / .txt)")
+        st.subheader("▸ Upload New Show (.zip / .txt)")
         uploaded_file = st.file_uploader(
             "Drop a screenplay .zip or .txt to run live:",
             type=["zip", "txt"],
@@ -132,10 +150,10 @@ def main() -> None:
         )
 
         st.divider()
-        st.subheader("📥 1-Click Raw Outputs Export")
+        st.subheader("↓ 1-Click Raw Outputs Export")
         if (RAW_OUTPUTS_DIR / "editor_cut_sheet.csv").exists():
             st.download_button(
-                "⬇️ Download Editor Cut-Sheet (.csv)",
+                "↓ Download Editor Cut-Sheet (.csv)",
                 data=(RAW_OUTPUTS_DIR / "editor_cut_sheet.csv").read_bytes(),
                 file_name="editor_cut_sheet.csv",
                 mime="text/csv",
@@ -143,7 +161,7 @@ def main() -> None:
             )
         if (RAW_OUTPUTS_DIR / "ranked_promos_top20.json").exists():
             st.download_button(
-                "⬇️ Download Top-20 Promos (.json)",
+                "↓ Download Top-20 Promos (.json)",
                 data=(RAW_OUTPUTS_DIR / "ranked_promos_top20.json").read_bytes(),
                 file_name="ranked_promos_top20.json",
                 mime="application/json",
@@ -151,7 +169,7 @@ def main() -> None:
             )
         if (RAW_OUTPUTS_DIR / "all_50_episodes_promos.csv").exists():
             st.download_button(
-                "⬇️ Download All 50 Episodes (.csv)",
+                "↓ Download All 50 Episodes (.csv)",
                 data=(RAW_OUTPUTS_DIR / "all_50_episodes_promos.csv").read_bytes(),
                 file_name="all_50_episodes_promos.csv",
                 mime="text/csv",
@@ -159,7 +177,7 @@ def main() -> None:
             )
         if (RAW_OUTPUTS_DIR / "ffmpeg_slice_commands.sh").exists():
             st.download_button(
-                "⬇️ Download FFmpeg Cut Script (.sh)",
+                "↓ Download FFmpeg Cut Script (.sh)",
                 data=(RAW_OUTPUTS_DIR / "ffmpeg_slice_commands.sh").read_bytes(),
                 file_name="ffmpeg_slice_commands.sh",
                 mime="text/x-shellscript",
@@ -207,25 +225,25 @@ def main() -> None:
     total_mins = sum(e.total_duration_sec for e in episodes) / 60.0
     c1.metric("Episodes Analyzed", f"{len(episodes)} / {len(episodes)}", f"{total_mins:.1f} mins total")
     c2.metric("Concurrent Cues Parsed", f"{total_cues:,}", f"{sum(len(e.scenes) for e in episodes)} scenes")
-    c3.metric("20s–60s Duration Compliance", "100.0%", "Hard Stage-1 Gate")
+    c3.metric("20s-60s Duration Compliance", "100.0%", "Hard Stage-1 Gate")
     c4.metric("Dialogue-Safe Cut Boundaries", "100.0%", "Zero mid-line slices")
     c5.metric(
         "Active Stage-2 Judge",
-        telemetry.provider_effective.split()[0],
+        PROVIDER_LABELS.get(provider_choice, telemetry.provider_effective.split()[0]),
         f"{telemetry.cache_hits} cached | {telemetry.elapsed_sec*1000:.0f}ms",
     )
 
     if telemetry.warnings:
         for w in telemetry.warnings:
-            st.warning(f"🛡️ **3-Layer Rescue Active:** {w}")
+            st.warning(f"3-Layer Rescue Active: {w}")
 
     # 4 Main Studio Tabs
     tab1, tab2, tab3, tab4 = st.tabs(
         [
-            "🏆 Tab 1: Top-20 Ranked Promos & Cut Inspector",
-            "📈 Tab 2: All 50 Episodes & Scale ROI Simulator",
-            "🔬 Tab 3: Model-Swap Diff & 'Where AI Got It Wrong'",
-            "🧪 Tab 4: Live Constraint & Custom Script Lab",
+            "★ Tab 1: Top-20 Ranked Promos & Cut Inspector",
+            "◆ Tab 2: All 50 Episodes & Scale ROI Simulator",
+            "▸ Tab 3: Model-Swap Diff & 'Where AI Got It Wrong'",
+            "⚙ Tab 4: Live Constraint & Custom Script Lab",
         ]
     )
 
@@ -258,29 +276,29 @@ def main() -> None:
             )
         st.dataframe(pd.DataFrame(summary_rows), width="stretch", hide_index=True)
 
-        st.markdown("### 🔍 Detailed Promo Cut Cards & Timed Script Inspector")
+        st.markdown("### ▸ Detailed Promo Cut Cards & Timed Script Inspector")
         for idx, c in enumerate(top20, start=1):
             badge = (
-                "🟢 Single-Segment Cut"
+                "Single-Segment Cut"
                 if c.promo_type == "single_segment"
-                else f"🟣 Multi-Segment Stitch ({c.promo_type})"
+                else f"Multi-Segment Stitch ({c.promo_type})"
             )
             payoff_badge = (
-                "⏭️ Cross-Episode (Ep N+1) Payoff"
+                "Cross-Episode (Ep N+1) Payoff"
                 if c.payoff_source == "next_episode"
-                else "⏱️ Same-Episode (+6s) Payoff"
+                else "Same-Episode (+6s) Payoff"
             )
             with st.expander(
-                f"Rank #{idx:02d} | {c.timestamp_range_display} ({c.duration_sec:.1f}s) — Score: {c.final_score:.2f}/100 | {badge} | {payoff_badge}",
+                f"Rank #{idx:02d} | {c.timestamp_range_display} ({c.duration_sec:.1f}s) | Score: {c.final_score:.2f}/100 | {badge} | {payoff_badge}",
                 expanded=(idx <= 3),
             ):
                 col_a, col_b = st.columns([3, 2])
                 with col_a:
-                    st.markdown(f"**🎯 Editorial Pitch:** {c.rationale}")
-                    st.markdown(f"**⚡ Opening 3s Scroll-Stopper:** `{c.opening_hook_line}`")
-                    st.markdown(f"**🧨 Closing Cliffhanger Peak:** `{c.closing_cliffhanger_line}`")
+                    st.markdown(f"**★ Editorial Pitch:** {c.rationale}")
+                    st.markdown(f"**▸ Opening 3s Scroll-Stopper:** `{c.opening_hook_line}`")
+                    st.markdown(f"**◆ Closing Cliffhanger Peak:** `{c.closing_cliffhanger_line}`")
                     st.info(
-                        f"**🔒 Verified Withheld Payoff ({c.payoff_source} — what the viewer must click to see):**\n\n{c.withheld_payoff_preview}"
+                        f"**✓ Verified Withheld Payoff ({c.payoff_source} - what the viewer must click to see):**\n\n{c.withheld_payoff_preview}"
                     )
                     st.caption(f"**Cold-Viewer Clarity & Lore Audit:** {c.editorial_risk_note}")
 
@@ -295,18 +313,18 @@ def main() -> None:
                         f"**Stage-1 Structural:** `{c.stage1_score:.2f}` &rarr; **Stage-2 Judge (`{c.scoring_provider}`):** `{c.llm_score:.2f}` &rarr; **Blended:** `{c.final_score:.2f}`"
                     )
 
-                st.markdown("**✂️ 1-Click FFmpeg Slice / Stitch Command:**")
+                st.markdown("**▸ 1-Click FFmpeg Slice / Stitch Command:**")
                 st.code(build_ffmpeg_command(c), language="bash")
 
                 if c.excerpt_lines:
-                    st.markdown("**📜 Timed Screenplay Excerpt Inside Window:**")
+                    st.markdown("**▸ Timed Screenplay Excerpt Inside Window:**")
                     st.code("\n".join(c.excerpt_lines), language="text")
 
     # =========================================================================
     # TAB 2: ALL 50 EPISODES & SCALE ROI SIMULATOR
     # =========================================================================
     with tab2:
-        st.subheader("📊 50-Episode Series Tension Heatmap & Episode-by-Episode Promo Table")
+        st.subheader("◆ 50-Episode Series Tension Heatmap & Episode-by-Episode Promo Table")
         heatmap_data, econ_data = compute_series_heatmap_and_economics(episodes, best_per_ep)
         df_heat = pd.DataFrame(heatmap_data)
 
@@ -339,7 +357,7 @@ def main() -> None:
             )
             st.altair_chart(chart, width="stretch")
 
-        st.markdown(f"### 📋 Best Promo Cut for Every Episode ({len(best_per_ep)} / {len(episodes)} Episodes Covered)")
+        st.markdown(f"### ▸ Best Promo Cut for Every Episode ({len(best_per_ep)} / {len(episodes)} Episodes Covered)")
         ep_rows = []
         for c in best_per_ep:
             ep_rows.append(
@@ -361,7 +379,7 @@ def main() -> None:
         st.dataframe(pd.DataFrame(ep_rows), width="stretch", hide_index=True)
 
         st.divider()
-        st.subheader("🚀 Scale Thinking: Production Unit-Economics Simulator (1 to 200 Shows/Week)")
+        st.subheader("★ Scale Thinking: Production Unit-Economics Simulator (1 to 200 Shows/Week)")
         col_s1, col_s2 = st.columns([1, 2])
         with col_s1:
             sim_shows = st.slider(
@@ -395,13 +413,13 @@ def main() -> None:
     # TAB 3: MODEL-SWAP DIFF & WHERE AI GOT IT WRONG
     # =========================================================================
     with tab3:
-        st.subheader("🔬 Quality Judgement: Where Naive AI Gets It Wrong & Live Model-Swap Diff")
+        st.subheader("▸ Quality Judgement: Where Naive AI Gets It Wrong & Live Model-Swap Diff")
         naive_bench = compute_naive_vs_hybrid_benchmark(episodes, top20)
         model_diff = compute_model_swap_diff(raw_cands)
 
         sm = naive_bench["summary_metrics"]
         m1, m2, m3, m4 = st.columns(4)
-        m1.metric("Duration Compliance (20–60s)", f"{sm['hybrid_duration_compliance_pct']:.0f}%", f"+{sm['hybrid_duration_compliance_pct'] - sm['naive_duration_compliance_pct']:.0f}% vs Naive LLM")
+        m1.metric("Duration Compliance (20-60s)", f"{sm['hybrid_duration_compliance_pct']:.0f}%", f"+{sm['hybrid_duration_compliance_pct'] - sm['naive_duration_compliance_pct']:.0f}% vs Naive LLM")
         m2.metric("Dialogue-Safe Cut Boundaries", f"{sm['hybrid_dialogue_safe_cuts_pct']:.0f}%", f"+{sm['hybrid_dialogue_safe_cuts_pct'] - sm['naive_dialogue_safe_cuts_pct']:.0f}% vs Naive LLM")
         m3.metric("Verified Payoff Attached", f"{sm['hybrid_verified_payoff_pct']:.0f}%", f"+{sm['hybrid_verified_payoff_pct'] - sm['naive_verified_payoff_pct']:.0f}% vs Naive LLM")
         m4.metric("Cold-Viewer Clarity Score", f"{sm['hybrid_low_lore_clarity_pct']:.0f}%", f"+{sm['hybrid_low_lore_clarity_pct'] - sm['naive_low_lore_clarity_pct']:.0f}% vs Naive LLM")
@@ -409,9 +427,9 @@ def main() -> None:
         st.markdown("### 1. Four Real Failure Modes Caught on *I Married a Broken Soldier. He was a Duke*")
         for fc in naive_bench["failure_cases"]:
             with st.container(border=True):
-                st.markdown(f"#### ❌ `{fc['case_id']}` (Episode {fc['episode_num']:02d}): {fc['naive_failure_type']}")
-                st.markdown(f"- **Naive 1-Shot AI Output:** `{fc['naive_window']}` — *{fc['naive_symptom']}*")
-                st.markdown(f"- **✅ Hybrid Pipeline Fix:** `{fc['hybrid_fix_window']}` — **{fc['hybrid_mechanism']}**")
+                st.markdown(f"#### ✗ `{fc['case_id']}` (Episode {fc['episode_num']:02d}): {fc['naive_failure_type']}")
+                st.markdown(f"- **Naive 1-Shot AI Output:** `{fc['naive_window']}` (*{fc['naive_symptom']}*)")
+                st.markdown(f"- **✓ Hybrid Pipeline Fix:** `{fc['hybrid_fix_window']}` (**{fc['hybrid_mechanism']}**)")
 
         st.markdown("### 2. Live Model-Swap Re-Ranking Diff (`heuristic` Stage-1 vs. `semantic_reranker` Stage-2)")
         st.caption(
@@ -420,14 +438,14 @@ def main() -> None:
         st.dataframe(pd.DataFrame(model_diff["top_12_comparison"]), width="stretch", hide_index=True)
 
         if (RAW_OUTPUTS_DIR / "quality_audit_failures.md").exists():
-            with st.expander("📄 View Full `raw_outputs/quality_audit_failures.md` Report", expanded=False):
+            with st.expander("▸ View Full `raw_outputs/quality_audit_failures.md` Report", expanded=False):
                 st.markdown((RAW_OUTPUTS_DIR / "quality_audit_failures.md").read_text(encoding="utf-8"))
 
     # =========================================================================
     # TAB 4: LIVE CONSTRAINT & CUSTOM SCRIPT LAB (SHORTLIST INTERVIEW SANDBOX)
     # =========================================================================
     with tab4:
-        st.subheader("🧪 Live Constraint & Custom Screenplay Lab (Built for Shortlist Interview)")
+        st.subheader("⚙ Live Constraint & Custom Screenplay Lab (Built for Shortlist Interview)")
         st.caption(
             "Per the Kuku brief (*'If you are shortlisted, we will invite you for a live session where we will change one constraint or input and ask you to adapt'*), adjust duration rules or paste any custom script below to re-run instantaneously."
         )
@@ -446,38 +464,20 @@ def main() -> None:
         selected_ep = episodes[int(sample_ep_idx) - 1]
         next_ep_lab = episodes[int(sample_ep_idx)] if int(sample_ep_idx) < len(episodes) else None
 
-        # Evaluate windows under custom min/max duration constraints
-        lab_cands: List[PromoCandidate] = []
-        safe_starts = sorted({round(c.start_sec, 2) for c in selected_ep.cues})
-        safe_ends = sorted({round(c.end_sec, 2) for c in selected_ep.cues})
-        for s_sec in safe_starts[::2]:
-            for e_sec in safe_ends:
-                dur = round(e_sec - s_sec, 2)
-                if custom_min_dur <= dur <= custom_max_dur:
-                    cand = score_window_structural(
-                        episode=selected_ep,
-                        start_sec=s_sec,
-                        end_sec=e_sec,
-                        speaker_lore_tokens=set(lore_tokens),
-                        next_episode=next_ep_lab,
-                        materialize_text=True,
-                    )
-                    # Override duration_pacing_fit for custom duration range
-                    cand.duration_pacing_fit = 18.0
-                    cand.stage1_score = round(
-                        cand.hook_velocity
-                        + cand.conflict_escalation
-                        + cand.cliffhanger_peak
-                        + cand.standalone_clarity
-                        + cand.duration_pacing_fit,
-                        2,
-                    )
-                    cand.final_score = cand.stage1_score
-                    lab_cands.append(cand)
-
+        # Evaluate dialogue-safe windows under custom min/max duration constraints + Stage-2 AI Judge
+        lab_stage1 = generate_episode_candidates(
+            episode=selected_ep,
+            speaker_lore_tokens=set(lore_tokens),
+            next_episode=next_ep_lab,
+            max_per_episode=5,
+            min_duration=custom_min_dur,
+            max_duration=custom_max_dur,
+        )
+        lab_cands, _ = score_candidates_with_judge(lab_stage1, provider=provider_choice)
         lab_cands.sort(key=lambda x: x.final_score, reverse=True)
+
         st.markdown(
-            f"#### Top Windows in Episode {selected_ep.episode_num:02d} under Custom Constraint (`{custom_min_dur:.0f}s – {custom_max_dur:.0f}s`):"
+            f"#### Top Windows in Episode {selected_ep.episode_num:02d} under Custom Constraint (`{custom_min_dur:.0f}s - {custom_max_dur:.0f}s`):"
         )
         if lab_cands:
             best_lab = lab_cands[0]
@@ -487,6 +487,21 @@ def main() -> None:
                 f"- **Closing Cliffhanger:** {best_lab.closing_cliffhanger_line}\n"
                 f"- **Withheld Payoff ({best_lab.payoff_source}):** {best_lab.withheld_payoff_preview}"
             )
+            if len(lab_cands) > 1:
+                lab_rows = [
+                    {
+                        "Rank": f"#{i:02d}",
+                        "Timestamp Window": c.timestamp_range_display,
+                        "Duration (s)": round(c.duration_sec, 1),
+                        "Blended Score": round(c.final_score, 2),
+                        "Stage-1 Score": round(c.stage1_score, 2),
+                        "Stage-2 Judge": round(c.llm_score or c.stage1_score, 2),
+                        "Opening Hook": c.opening_hook_line[:75],
+                        "Closing Cliffhanger": c.closing_cliffhanger_line[:75],
+                    }
+                    for i, c in enumerate(lab_cands, start=1)
+                ]
+                st.dataframe(pd.DataFrame(lab_rows), width="stretch", hide_index=True)
 
 
 if __name__ == "__main__":
