@@ -384,6 +384,59 @@ class PromoCandidate:
             "excerpt_lines": self.excerpt_lines,
         }
 
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "PromoCandidate":
+        """Reconstruct a PromoCandidate from a serialized raw_outputs JSON dictionary."""
+        sub = data.get("sub_scores", {})
+        segs = [
+            SegmentSpan(
+                episode_num=int(s.get("episode_num", data.get("episode_num", 1))),
+                start_sec=float(s["start_sec"]),
+                end_sec=float(s["end_sec"]),
+                label=str(s.get("label", "primary")),
+            )
+            for s in data.get("segments", [])
+        ]
+        if not segs:
+            segs = [
+                SegmentSpan(
+                    episode_num=int(data.get("episode_num", 1)),
+                    start_sec=float(data.get("start_sec", 0.0)),
+                    end_sec=float(data.get("end_sec", 30.0)),
+                )
+            ]
+        return cls(
+            candidate_id=str(data["candidate_id"]),
+            episode_num=int(data["episode_num"]),
+            episode_filename=str(data.get("episode_filename", f"Episode {int(data['episode_num'])}.txt")),
+            promo_type=str(data.get("promo_type", "single_segment")),
+            start_sec=float(data["start_sec"]),
+            end_sec=float(data["end_sec"]),
+            duration_sec=float(data["duration_sec"]),
+            segments=segs,
+            hook_velocity=float(sub.get("hook_velocity", data.get("hook_velocity", 16.0))),
+            conflict_escalation=float(sub.get("conflict_escalation", data.get("conflict_escalation", 16.0))),
+            cliffhanger_peak=float(sub.get("cliffhanger_peak", data.get("cliffhanger_peak", 16.0))),
+            standalone_clarity=float(sub.get("standalone_clarity", data.get("standalone_clarity", 16.0))),
+            duration_pacing_fit=float(sub.get("duration_pacing_fit", data.get("duration_pacing_fit", 16.0))),
+            stage1_score=float(data.get("stage1_score", 80.0)),
+            final_score=float(data.get("final_score", 80.0)),
+            llm_score=float(data["llm_score"]) if data.get("llm_score") is not None else None,
+            scoring_provider=str(data.get("scoring_provider", "semantic_reranker")),
+            rescued_fallback=bool(data.get("rescued_fallback", False)),
+            dialogue_safe=bool(data.get("dialogue_safe", True)),
+            explicit_cliffhanger_flag=bool(data.get("explicit_cliffhanger_flag", False)),
+            spoken_lore_tokens_found=list(data.get("spoken_lore_tokens_found", [])),
+            speakers_in_clip=list(data.get("speakers_in_clip", [])),
+            opening_hook_line=str(data.get("opening_hook_line", "")),
+            closing_cliffhanger_line=str(data.get("closing_cliffhanger_line", "")),
+            withheld_payoff_preview=str(data.get("withheld_payoff_preview", "")),
+            payoff_source=str(data.get("payoff_source", "same_episode")),
+            rationale=str(data.get("rationale", "")),
+            editorial_risk_note=str(data.get("editorial_risk_note", "")),
+            excerpt_lines=list(data.get("excerpt_lines", [])),
+        )
+
 
 def is_continuation_dialogue_cue(cue: Cue) -> bool:
     """Return True if a DIALOGUE cue begins mid-sentence (e.g., '...and' or lowercase)."""
