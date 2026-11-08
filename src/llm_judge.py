@@ -138,10 +138,12 @@ def load_disk_cache(cache_path: Path = DEFAULT_CACHE_PATH) -> Dict[str, Dict[str
 def save_disk_cache(
     cache: Dict[str, Dict[str, Any]], cache_path: Path = DEFAULT_CACHE_PATH
 ) -> None:
-    """Persist the SHA-256 LLM evaluation cache to disk."""
+    """Persist the SHA-256 LLM evaluation cache to disk atomically via os.replace."""
     try:
         cache_path.parent.mkdir(parents=True, exist_ok=True)
-        cache_path.write_text(json.dumps(cache, indent=2), encoding="utf-8")
+        tmp_path = cache_path.with_suffix(f".{os.getpid()}.tmp")
+        tmp_path.write_text(json.dumps(cache, indent=2), encoding="utf-8")
+        os.replace(tmp_path, cache_path)
     except Exception:
         pass
 

@@ -6,6 +6,11 @@
 - **Run Automated Test Suite (15 tests):** `.venv/bin/pytest -v`
 - **Regenerate 2-Page Solution Doc PDF:** `~/.claude/skills/gstack/make-pdf/dist/pdf generate --margins 0.4in --no-confidential docs/Kuku_Solution_Doc.md Kuku_Solution_Doc.pdf`
 
+## Testing
+- **Test Runner:** `.venv/bin/pytest -v`
+- **Test Directory:** `tests/test_pipeline.py` (15 unit, integration, regression, and Streamlit `AppTest` tests)
+- **Minimum / Target Coverage:** Minimum: 80%, Target: 100%
+
 ## Skill routing
 
 When the user's request matches an available skill, invoke it via the Skill tool. When in doubt, invoke the skill.
