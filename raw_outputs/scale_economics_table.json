@@ -1,0 +1,57 @@
+[
+  {
+    "shows_per_week": 1,
+    "episodes_processed": 50,
+    "manual_editor_hours": 15.0,
+    "manual_cost_usd": 450.0,
+    "naive_llm_api_cost_usd": 4.2,
+    "hybrid_pipeline_api_cost_usd": 0.015,
+    "hybrid_editor_review_hours": 0.5,
+    "hours_saved_per_week": 14.5,
+    "cost_savings_pct": 99.6
+  },
+  {
+    "shows_per_week": 10,
+    "episodes_processed": 500,
+    "manual_editor_hours": 150.0,
+    "manual_cost_usd": 4500.0,
+    "naive_llm_api_cost_usd": 42.0,
+    "hybrid_pipeline_api_cost_usd": 0.15,
+    "hybrid_editor_review_hours": 5.0,
+    "hours_saved_per_week": 145.0,
+    "cost_savings_pct": 99.6
+  },
+  {
+    "shows_per_week": 50,
+    "episodes_processed": 2500,
+    "manual_editor_hours": 750.0,
+    "manual_cost_usd": 22500.0,
+    "naive_llm_api_cost_usd": 210.0,
+    "hybrid_pipeline_api_cost_usd": 0.75,
+    "hybrid_editor_review_hours": 25.0,
+    "hours_saved_per_week": 725.0,
+    "cost_savings_pct": 99.6
+  },
+  {
+    "shows_per_week": 100,
+    "episodes_processed": 5000,
+    "manual_editor_hours": 1500.0,
+    "manual_cost_usd": 45000.0,
+    "naive_llm_api_cost_usd": 420.0,
+    "hybrid_pipeline_api_cost_usd": 1.5,
+    "hybrid_editor_review_hours": 50.0,
+    "hours_saved_per_week": 1450.0,
+    "cost_savings_pct": 99.6
+  },
+  {
+    "shows_per_week": 200,
+    "episodes_processed": 10000,
+    "manual_editor_hours": 3000.0,
+    "manual_cost_usd": 90000.0,
+    "naive_llm_api_cost_usd": 840.0,
+    "hybrid_pipeline_api_cost_usd": 3.0,
+    "hybrid_editor_review_hours": 100.0,
+    "hours_saved_per_week": 2900.0,
+    "cost_savings_pct": 99.6
+  }
+]
