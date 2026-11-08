@@ -1,13 +1,11 @@
-# Kuku Confidentiality Guard (Assignment p. 5: Do not share this document or the datasets publicly)
+# Kuku Confidentiality Guard (Assignment p. 5: Do not push raw screenplay datasets to public repos)
 *.zip
-Kuku*Assignment.pdf
 scripts_extracted/
 data/raw_scripts/
 
-# Local Virtualenv, Cache & QA Reports
+# Local Virtualenv & Cache
 .venv/
 .cache/
-.gstack/
 __pycache__/
 *.py[cod]
 .pytest_cache/

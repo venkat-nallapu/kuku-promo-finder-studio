@@ -1,0 +1,16 @@
+[project]
+name = "kuku-promo-finder-studio"
+version = "1.0.0"
+description = "Kuku AI Generalist Assignment — Problem 1: Find the Promos (Ads) across 50 microdrama episodes"
+requires-python = ">=3.10"
+dependencies = [
+    "streamlit>=1.40.0",
+    "pandas>=2.2.0",
+    "altair>=5.0.0",
+    "httpx>=0.27.0",
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

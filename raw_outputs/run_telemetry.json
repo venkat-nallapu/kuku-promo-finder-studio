@@ -1,0 +1,15 @@
+{
+  "provider_requested": "semantic_reranker",
+  "provider_effective": "semantic_reranker",
+  "model_name": "stage2-narrative-arc-v2",
+  "macro_batches_total": 0,
+  "api_calls_made": 0,
+  "cache_hits": 0,
+  "rescued_batches": 0,
+  "total_candidates_scored": 198,
+  "elapsed_sec": 0.118,
+  "estimated_tokens_in": 0,
+  "estimated_tokens_out": 0,
+  "estimated_cost_usd": 0.0,
+  "warnings": []
+}

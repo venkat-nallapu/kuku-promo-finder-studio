@@ -1,0 +1,1364 @@
+[
+  {
+    "candidate_id": "ep043_69s_115s",
+    "episode_num": 43,
+    "episode_filename": "episode-043-Episode 1686803.txt",
+    "promo_type": "single_segment",
+    "start_sec": 68.8,
+    "end_sec": 114.96,
+    "start_timestamp": "01:08.80",
+    "end_timestamp": "01:54.96",
+    "timestamp_range_display": "Ep 43 (01:08.80 - 01:54.96)",
+    "duration_sec": 46.16,
+    "segments": [
+      {
+        "episode_num": 43,
+        "start_sec": 68.8,
+        "end_sec": 114.96,
+        "start_timestamp": "01:08.80",
+        "end_timestamp": "01:54.96",
+        "duration_sec": 46.16,
+        "label": "primary"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 16.0,
+      "conflict_escalation": 18.35,
+      "cliffhanger_peak": 15.3,
+      "standalone_clarity": 20.0,
+      "duration_pacing_fit": 20.0
+    },
+    "stage1_score": 89.65,
+    "llm_score": 76.86,
+    "final_score": 81.98,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": false,
+    "spoken_lore_tokens_found": [
+      "alexander",
+      "sterling"
+    ],
+    "speakers_in_clip": [
+      "ALEXANDER",
+      "BLOND NOBLEMAN",
+      "CROWN OFFICIAL",
+      "CATHERINE",
+      "POLICE CONSTABLE"
+    ],
+    "opening_hook_line": "(01:09.00) ALEXANDER: \"You sold my men to the enemy.\"",
+    "closing_cliffhanger_line": "(01:50.40-01:52.50) POLICE CONSTABLE: \"Going somewhere, Lord Sterling?\" + [01:47.00 SOUND_FX] Heavy iron latch clicking open and wooden door creaking.",
+    "withheld_payoff_preview": "Ep 44 Continuity: Picks up immediately from Episode 43's cliffhanger at the church side exit; Lord Sterling's escape is blocked by the Police Constable, leading into the downfall of the conspirators. | Ep 44 [00:00.00-00:03.20] CAMERA: Low-angle shot framing the towering stone archway as a stern Police Constable steps through the heavy open doors, blocking Lord Sterling's path. | Ep 44 [00:00.00-00:03.20] ACTION: The Police Constable strides firmly down the steps and halts right in front of Lord Sterling, holding his ground.",
+    "payoff_source": "next_episode",
+    "rationale": "High-converting 46.2s ad confrontation (ALEXANDER vs. BLOND NOBLEMAN): arrests scroll in the first 3s with 'ALEXANDER: \"You sold my men to the enemy.\"', escalates through 3 high-stakes reversal beats, and snaps to black on 'POLICE CONSTABLE: \"Going somewhere, Lord Sterling?\" + [01:47.00 SOUND_FX] Heavy iron latch clicking open and wooden door...' (withholding next episode payoff).",
+    "editorial_risk_note": "Zero cold-audience confusion: only 2 character name(s) spoken aloud; power dynamic (ALEXANDER vs. BLOND NOBLEMAN) is immediately legible without prior episodes.",
+    "excerpt_lines": [
+      "[01:09.00-01:11.30] ALEXANDER (Furious, Thunderous): \"You sold my men to the enemy.\"",
+      "[01:11.40-01:12.70] BLOND NOBLEMAN (Desperate, Denying): \"I didn't!\"",
+      "[01:12.80-01:15.20] ALEXANDER (Resonant, Accusatory): \"And when you believed I was dead...\"",
+      "[01:16.10-01:17.60] ALEXANDER (Venomous): \"You took my title.\"",
+      "[01:18.00-01:19.40] [SOUND_FX] Brittle snap of breaking sealing wax.",
+      "[01:21.50-01:25.80] CROWN OFFICIAL (Grave, Official): \"Official death confirmation was filed three months after the ambush.\"",
+      "[01:26.00-01:28.50] CROWN OFFICIAL (Continuing): \"Duke Alexander Ashburn was declared dead.\"",
+      "[01:28.60-01:33.00] CROWN OFFICIAL (Loud, Authoritative): \"His estate and title were subsequently transferred under false authority.\"",
+      "[01:33.40-01:36.40] BLOND NOBLEMAN (Screaming, Desperate): \"I was told he was dead!\"",
+      "[01:36.80-01:39.80] ALEXANDER (Cold, Penetrating): \"You were told exactly what you needed to hear.\"",
+      "[01:40.00-01:42.20] BLOND NOBLEMAN (Frantic, Betraying): \"Sterling handled the report!\"",
+      "[01:44.80-01:46.20] CATHERINE (Shocked, Murmuring): \"My Lord?\"",
+      "[01:47.00-01:49.00] [SOUND_FX] Heavy iron latch clicking open and wooden door creaking.",
+      "[01:50.40-01:52.50] POLICE CONSTABLE (Firm, Sardonic): \"Going somewhere, Lord Sterling?\""
+    ]
+  },
+  {
+    "candidate_id": "ep027_26s_56s",
+    "episode_num": 27,
+    "episode_filename": "episode-027-Episode 1678580.txt",
+    "promo_type": "single_segment",
+    "start_sec": 26.1,
+    "end_sec": 55.6,
+    "start_timestamp": "00:26.10",
+    "end_timestamp": "00:55.60",
+    "timestamp_range_display": "Ep 27 (00:26.10 - 00:55.60)",
+    "duration_sec": 29.5,
+    "segments": [
+      {
+        "episode_num": 27,
+        "start_sec": 26.1,
+        "end_sec": 55.6,
+        "start_timestamp": "00:26.10",
+        "end_timestamp": "00:55.60",
+        "duration_sec": 29.5,
+        "label": "primary"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 18.0,
+      "conflict_escalation": 18.35,
+      "cliffhanger_peak": 15.2,
+      "standalone_clarity": 20.0,
+      "duration_pacing_fit": 20.0
+    },
+    "stage1_score": 91.55,
+    "llm_score": 73.65,
+    "final_score": 80.81,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": false,
+    "spoken_lore_tokens_found": [],
+    "speakers_in_clip": [
+      "DOWAGER DUCHESS",
+      "JULIANA",
+      "LADY CATHERINE"
+    ],
+    "opening_hook_line": "(00:26.60) DOWAGER DUCHESS: \"My lost son wore that exact ring. He went to war...\"",
+    "closing_cliffhanger_line": "(00:52.20-00:55.60) LADY CATHERINE: \"What is that maid doing in Her Grace's private chamber?\" + [00:46.40 SOUND_FX] Loud, violent pounding echoes on the wooden double doors.",
+    "withheld_payoff_preview": "[00:55.60-00:58.60] CAMERA: Medium shot of Juliana standing stiffly beside the bed, concealing her hands. | [00:56.80-00:58.40] JULIANA: \"She needed help.\" | [00:58.60-01:02.00] CAMERA: Close-up of Lady Catherine narrowing her eyes with venomous suspicion.",
+    "payoff_source": "same_episode",
+    "rationale": "High-converting 29.5s ad confrontation (DOWAGER DUCHESS vs. JULIANA): arrests scroll in the first 3s with 'DOWAGER DUCHESS: \"My lost son wore that exact ring. He went to war...\"', escalates through 4 high-stakes reversal beats, and snaps to black on 'LADY CATHERINE: \"What is that maid doing in Her Grace's private chamber?\" + [00:46.40 SOUND_FX] Loud, violent pounding...' (withholding same episode payoff).",
+    "editorial_risk_note": "Zero cold-audience confusion: only 0 character name(s) spoken aloud; power dynamic (DOWAGER DUCHESS vs. JULIANA) is immediately legible without prior episodes.",
+    "excerpt_lines": [
+      "[00:26.60-00:31.40] DOWAGER DUCHESS (Emotionally Strained, Weeping): \"My lost son wore that exact ring. He went to war...\"",
+      "[00:32.10-00:34.80] JULIANA (Shocked, Breathless): \"Your son? He told me he was only a sergeant.\"",
+      "[00:35.20-00:37.60] DOWAGER DUCHESS (Desperate, Clinging): \"My lost son wore that ring!\"",
+      "[00:37.80-00:40.20] DOWAGER DUCHESS (O.S., Pleading): \"Did your husband serve beside him?\"",
+      "[00:41.00-00:44.20] JULIANA (Soft, Reverent): \"He never spoke of his officers. He only spoke of survival.\"",
+      "[00:44.50-00:46.40] DOWAGER DUCHESS (Hushed, Desperate): \"What is your husband's name?\"",
+      "[00:46.40-00:48.30] [SOUND_FX] Loud, violent pounding echoes on the wooden double doors.",
+      "[00:48.80-00:51.50] [ACTION] The heavy mahogany double doors burst open, revealing the Blond Nobleman flanked by Lady Catherine and a royal guard in uniform.",
+      "[00:52.20-00:55.60] LADY CATHERINE (Sharp, Accusatory): \"What is that maid doing in Her Grace's private chamber?\""
+    ]
+  },
+  {
+    "candidate_id": "ep004_110s_149s",
+    "episode_num": 4,
+    "episode_filename": "episode-004-Episode 1671706.txt",
+    "promo_type": "single_segment",
+    "start_sec": 110.0,
+    "end_sec": 149.0,
+    "start_timestamp": "01:50.00",
+    "end_timestamp": "02:29.00",
+    "timestamp_range_display": "Ep 04 (01:50.00 - 02:29.00)",
+    "duration_sec": 39.0,
+    "segments": [
+      {
+        "episode_num": 4,
+        "start_sec": 110.0,
+        "end_sec": 149.0,
+        "start_timestamp": "01:50.00",
+        "end_timestamp": "02:29.00",
+        "duration_sec": 39.0,
+        "label": "primary"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 16.0,
+      "conflict_escalation": 19.55,
+      "cliffhanger_peak": 15.5,
+      "standalone_clarity": 20.0,
+      "duration_pacing_fit": 20.0
+    },
+    "stage1_score": 91.05,
+    "llm_score": 73.68,
+    "final_score": 80.63,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": false,
+    "spoken_lore_tokens_found": [
+      "ashcroft",
+      "juliana"
+    ],
+    "speakers_in_clip": [
+      "THE PRIEST",
+      "GERALD",
+      "JULIANA",
+      "LADY ASHCROFT",
+      "MYSTERIOUS BEARDED MAN"
+    ],
+    "opening_hook_line": "(01:50.00) THE PRIEST: \"By the authority entrusted to me, I now pronounce you...\"",
+    "closing_cliffhanger_line": "(02:19.50-02:20.80) MYSTERIOUS BEARDED MAN: \"Come, Lady Juliana.\" + [02:27.00 SOUND_FX] Heavy oak doors creaking open, followed by a triumphant musical swell fading out into silence.",
+    "withheld_payoff_preview": "Ep 05 Continuity: Follows directly from Episode 4's ending where Juliana and the Mysterious Bearded Man walked out of the chapel doors into the daylight after completing their wedding vows. | Ep 05 [00:00.00-00:02.50] CAMERA: Close-up on Lady Juliana's hands clutching an ancient, brass-bound leather ledger against the skirt of her white wedding gown as she walks. | Ep 05 [00:00.00-00:02.50] ACTION: Juliana grips the heirloom ledger tightly against her waist, her posture resolute despite the tension.",
+    "payoff_source": "next_episode",
+    "rationale": "High-converting 39.0s ad confrontation (THE PRIEST vs. GERALD): arrests scroll in the first 3s with 'THE PRIEST: \"By the authority entrusted to me, I now pronounce you...\"', escalates through 2 high-stakes reversal beats, and snaps to black on 'MYSTERIOUS BEARDED MAN: \"Come, Lady Juliana.\" + [02:27.00 SOUND_FX] Heavy oak doors creaking open, followed by a triumphant...' (withholding next episode payoff).",
+    "editorial_risk_note": "Zero cold-audience confusion: only 2 character name(s) spoken aloud; power dynamic (THE PRIEST vs. GERALD) is immediately legible without prior episodes.",
+    "excerpt_lines": [
+      "[01:50.00-01:53.00] THE PRIEST (Ceremonial): \"By the authority entrusted to me, I now pronounce you...\"",
+      "[01:53.00-01:54.80] THE PRIEST (Off-Screen, Booming): \"...husband and wife!\"",
+      "[01:54.00-01:55.20] [SOUND_FX] Dramatic musical chord swelling.",
+      "[01:55.00-01:56.80] GERALD (Furious, Shouting): \"You have thrown yourself away!\"",
+      "[01:57.00-01:59.00] GERALD (Livid): \"For a penniless nobody!\"",
+      "[02:00.50-02:02.80] JULIANA (Calm, Cutting): \"I would rather choose my own life...\"",
+      "[02:03.00-02:05.50] JULIANA (Firm, Final): \"...than spend another moment begging for yours.\"",
+      "[02:06.00-02:07.40] [ACTION] Gerald recoils slightly, mouth agape.",
+      "[02:07.50-02:11.50] LADY ASHCROFT (Imperious, Shouting): \"Do not bring this man anywhere near Ashcroft Manor!\"",
+      "[02:12.00-02:14.50] LADY ASHCROFT (Venomous): \"You are disowned!\"",
+      "[02:19.50-02:20.80] MYSTERIOUS BEARDED MAN (Soft, Protective): \"Come, Lady Juliana.\"",
+      "[02:25.00-02:26.50] [ACTION] Clarissa gapes in shock while Lady Ashcroft exhales in exasperation.",
+      "[02:27.50-02:31.40] [ACTION] Juliana and the Mysterious Bearded Man walk hand-in-hand through the towering doors into the sunlight together, turning their backs on the ruined wedding as the screen fades out.",
+      "[02:27.00-02:29.00] [SOUND_FX] Heavy oak doors creaking open, followed by a triumphant musical swell fading out into silence."
+    ]
+  },
+  {
+    "candidate_id": "ep044_17s_70s",
+    "episode_num": 44,
+    "episode_filename": "episode-044-Episode 1686804.txt",
+    "promo_type": "single_segment",
+    "start_sec": 17.4,
+    "end_sec": 70.4,
+    "start_timestamp": "00:17.40",
+    "end_timestamp": "01:10.40",
+    "timestamp_range_display": "Ep 44 (00:17.40 - 01:10.40)",
+    "duration_sec": 53.0,
+    "segments": [
+      {
+        "episode_num": 44,
+        "start_sec": 17.4,
+        "end_sec": 70.4,
+        "start_timestamp": "00:17.40",
+        "end_timestamp": "01:10.40",
+        "duration_sec": 53.0,
+        "label": "primary"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 20.0,
+      "conflict_escalation": 18.6,
+      "cliffhanger_peak": 12.8,
+      "standalone_clarity": 19.3,
+      "duration_pacing_fit": 18.5
+    },
+    "stage1_score": 89.2,
+    "llm_score": 74.56,
+    "final_score": 80.42,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": false,
+    "spoken_lore_tokens_found": [
+      "alexander"
+    ],
+    "speakers_in_clip": [
+      "BLOND NOBLEMAN",
+      "CATHERINE",
+      "ALEXANDER"
+    ],
+    "opening_hook_line": "(00:17.40) BLOND NOBLEMAN: \"Do something!\"",
+    "closing_cliffhanger_line": "(01:10.10-01:10.40) CATHERINE: \"Her?!\"",
+    "withheld_payoff_preview": "Ep 45 Continuity: Picks up directly from Episode 44's climax where Alexander walked away from Catherine towards Juliana standing in chains at the church doorway. | Ep 45 [00:00.00-00:03.00] CAMERA: Full tracking shot following behind Alexander as he walks down the rubble-covered stone aisle toward Juliana. | Ep 45 [00:00.00-00:02.80] ACTION: Alexander strides purposefully down the cathedral aisle, ignoring the watching nobles as Juliana stands shackled in her rustic grey dress near the entrance.",
+    "payoff_source": "next_episode",
+    "rationale": "High-converting 53.0s ad confrontation (BLOND NOBLEMAN vs. CATHERINE): arrests scroll in the first 3s with 'BLOND NOBLEMAN: \"Do something!\"', escalates through 4 high-stakes reversal beats, and snaps to black on 'CATHERINE: \"Her?!\"' (withholding next episode payoff).",
+    "editorial_risk_note": "Zero cold-audience confusion: only 1 character name(s) spoken aloud; power dynamic (BLOND NOBLEMAN vs. CATHERINE) is immediately legible without prior episodes.",
+    "excerpt_lines": [
+      "[00:17.40-00:19.30] BLOND NOBLEMAN (Desperate, Screaming): \"Do something!\"",
+      "[00:21.80-00:24.40] [ACTION] Catherine's satin-gloved hand clenches tightly into a trembling fist against the folds of her ornate gown.",
+      "[00:25.20-00:28.00] CATHERINE (Shaken, Tearful): \"Alexander... I thought you had died.\"",
+      "[00:28.40-00:31.00] CATHERINE (Choked, Weeping): \"Do you know what this did to me?\"",
+      "[00:31.20-00:32.40] CATHERINE (O.S., Pleading): \"I mourned you.\"",
+      "[00:32.40-00:34.00] CATHERINE (Vulnerable, Trembling): \"I waited for you.\"",
+      "[00:34.20-00:38.80] CATHERINE (Heartbroken): \"For three years, I believed the man I loved was buried somewhere across the sea.\"",
+      "[00:38.90-00:41.20] CATHERINE (Whispering, Longing): \"I never stopped loving you.\"",
+      "[00:41.20-00:42.80] [ACTION] Alexander abruptly pulls his face back, refusing her touch and leaving her hand suspended in mid-air.",
+      "[00:44.20-00:46.40] CATHERINE (Breathless, Hurt): \"You don't remember?\"",
+      "[00:46.60-00:48.80] CATHERINE (Desperate, Demanding): \"I was supposed to be your Duchess!\"",
+      "[00:49.20-00:51.00] ALEXANDER (Cold, Implacable): \"You were never my Duchess.\"",
+      "[00:51.10-00:52.80] CATHERINE (Sobbing, Pleading): \"But I loved you!\"",
+      "[00:53.00-00:55.50] ALEXANDER (Scornful, Biting): \"You loved the Duke you thought you would marry.\""
+    ]
+  },
+  {
+    "candidate_id": "ep037_104s_156s",
+    "episode_num": 37,
+    "episode_filename": "episode-037-Episode 1681370.txt",
+    "promo_type": "single_segment",
+    "start_sec": 103.5,
+    "end_sec": 156.47,
+    "start_timestamp": "01:43.50",
+    "end_timestamp": "02:36.47",
+    "timestamp_range_display": "Ep 37 (01:43.50 - 02:36.47)",
+    "duration_sec": 52.97,
+    "segments": [
+      {
+        "episode_num": 37,
+        "start_sec": 103.5,
+        "end_sec": 156.47,
+        "start_timestamp": "01:43.50",
+        "end_timestamp": "02:36.47",
+        "duration_sec": 52.97,
+        "label": "primary"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 20.0,
+      "conflict_escalation": 17.9,
+      "cliffhanger_peak": 18.7,
+      "standalone_clarity": 17.9,
+      "duration_pacing_fit": 18.5
+    },
+    "stage1_score": 93.0,
+    "llm_score": 71.85,
+    "final_score": 80.31,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": true,
+    "spoken_lore_tokens_found": [],
+    "speakers_in_clip": [
+      "JULIANA",
+      "NOBLEMAN",
+      "LADY CLARISSA"
+    ],
+    "opening_hook_line": "(01:45.50) JULIANA: \"I will not!\"",
+    "closing_cliffhanger_line": "(02:28.00-02:36.47) [SOUND_FX] A deep, ominous cello rumble builds alongside the crackle of the fireplace into an unresolved, tension-filled cliffhanger sting before fading out.",
+    "withheld_payoff_preview": "Ep 38 Continuity: Following Rupert and Catherine's cruel announcement pairing their wedding with Juliana's public execution, Juliana remains starved in the subterranean dungeon awaiting her fate. | Ep 38 [00:00.00-00:04.00] CAMERA: Medium profile shot of Juliana slumped on the damp stone floor of her dark dungeon cell, her wrists bound in heavy iron shackles and chains draped over her lap. | Ep 38 [00:00.00-00:03.50] ACTION: Juliana sits motionless against the cold masonry, weak and visibly drained from starvation, her eyes cast downward.",
+    "payoff_source": "next_episode",
+    "rationale": "High-converting 53.0s ad confrontation (JULIANA vs. NOBLEMAN): arrests scroll in the first 3s with 'JULIANA: \"I will not!\"', escalates through 0 high-stakes reversal beats, and snaps to black on '[SOUND_FX] A deep, ominous cello rumble builds alongside the crackle of the fireplace into an unresolved, tension-filled...' (withholding next episode payoff).",
+    "editorial_risk_note": "Zero cold-audience confusion: only 0 character name(s) spoken aloud; power dynamic (JULIANA vs. NOBLEMAN) is immediately legible without prior episodes.",
+    "excerpt_lines": [
+      "[01:44.00-01:47.00] [SOUND_FX] The harsh scrape and clatter of heavy iron chains dragging across wet stone.",
+      "[01:45.50-01:47.80] JULIANA (Straining, Defiant Gasps): \"I will not!\"",
+      "[01:49.00-01:52.50] JULIANA (Passionate Defiance): \"They can take my name. They can take my home.\"",
+      "[01:53.60-01:56.20] JULIANA (Indomitable Spirit): \"They cannot take who I am!\"",
+      "[01:57.20-01:59.80] NOBLEMAN (Quietly Skeptical): \"Do you think she'll actually be executed?\"",
+      "[02:00.50-02:04.20] LADY CLARISSA (Dismissive, Certain): \"After what she has been accused of? Of course.\"",
+      "[02:04.80-02:06.50] NOBLEMAN (Musing): \"She was always stubborn.\"",
+      "[02:07.50-02:12.00] LADY CLARISSA (Bitter, Cold): \"That was her greatest mistake. She could have accepted what happened. She could have disappeared quietly.\"",
+      "[02:12.50-02:16.00] [ACTION] Clarissa rises from her armchair holding a cut crystal glass filled with dark red wine, pacing toward the fireplace.",
+      "[02:14.00-02:21.00] LADY CLARISSA (Venomous Monologue): \"Instead she married a nobody, played healer to peasants, challenged people above her. And now the whole county will watch her pay for it.\"",
+      "[02:22.50-02:26.50] LADY CLARISSA (Chilling Proclamation): \"Let them see what happens when a woman forgets her place.\"",
+      "[02:25.50-02:28.00] [ACTION] Clarissa takes a slow sip of the red wine, her eyes gleaming with dark relish.",
+      "[02:28.00-02:36.47] [SOUND_FX] A deep, ominous cello rumble builds alongside the crackle of the fireplace into an unresolved, tension-filled cliffhanger sting before fading out."
+    ]
+  },
+  {
+    "candidate_id": "ep003_multi_segment_ellipsis_0s_140s",
+    "episode_num": 3,
+    "episode_filename": "episode-003-Episode 1671705.txt",
+    "promo_type": "multi_segment_ellipsis",
+    "start_sec": 0.0,
+    "end_sec": 140.3,
+    "start_timestamp": "00:00.00",
+    "end_timestamp": "02:20.30",
+    "timestamp_range_display": "Ep 03 [00:00.00-00:16.30] + Ep 03 [01:49.00-02:20.30]",
+    "duration_sec": 47.6,
+    "segments": [
+      {
+        "episode_num": 3,
+        "start_sec": 0.0,
+        "end_sec": 16.3,
+        "start_timestamp": "00:00.00",
+        "end_timestamp": "00:16.30",
+        "duration_sec": 16.3,
+        "label": "setup_hook"
+      },
+      {
+        "episode_num": 3,
+        "start_sec": 109.0,
+        "end_sec": 140.3,
+        "start_timestamp": "01:49.00",
+        "end_timestamp": "02:20.30",
+        "duration_sec": 31.3,
+        "label": "climax_cliffhanger"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 18.5,
+      "conflict_escalation": 18.25,
+      "cliffhanger_peak": 12.8,
+      "standalone_clarity": 20.0,
+      "duration_pacing_fit": 20.0
+    },
+    "stage1_score": 89.55,
+    "llm_score": 74.1,
+    "final_score": 80.28,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": false,
+    "spoken_lore_tokens_found": [
+      "juliana"
+    ],
+    "speakers_in_clip": [
+      "LADY IN GOLD GOWN",
+      "LADY JULIANA",
+      "THE BEARDED STRANGER"
+    ],
+    "opening_hook_line": "(00:02.10) LADY IN GOLD GOWN: \"Look at you...\"",
+    "closing_cliffhanger_line": "(02:17.50-02:20.30) THE BEARDED STRANGER: \"Lady Juliana... accept my hand.\" + [02:14.80 SOUND_FX] A collective, stunned gasp rippling across the entire congregation.",
+    "withheld_payoff_preview": "[02:20.50-02:25.75] CAMERA: Close-up on Juliana looking down at him, fresh tears trailing down her flushed cheeks as a soft, trembling smile of hope touches her lips into a slow fade. | [02:20.50-02:25.75] ACTION: Juliana gazes down at her rugged savior, overcome with emotion as the swelling score holds on the cliffhanger.",
+    "payoff_source": "same_episode",
+    "rationale": "[Multi-Segment Ellipsis Cut] High-converting 47.6s ad confrontation (LADY IN GOLD GOWN vs. LADY JULIANA): arrests scroll in the first 3s with 'LADY IN GOLD GOWN: \"Look at you...\"', escalates through 3 high-stakes reversal beats, and snaps to black on 'THE BEARDED STRANGER: \"Lady Juliana... accept my hand.\" + [02:14.80 SOUND_FX] A collective, stunned gasp rippling across the...' (withholding same episode payoff).",
+    "editorial_risk_note": "Zero cold-audience confusion: only 1 character name(s) spoken aloud; power dynamic (LADY IN GOLD GOWN vs. LADY JULIANA) is immediately legible without prior episodes.",
+    "excerpt_lines": [
+      "[00:02.10-00:04.20] LADY IN GOLD GOWN (Mocking, Spiteful): \"Look at you...\"",
+      "[00:03.60-00:08.20] LADY IN GOLD GOWN (Gloating, Scornful): \"...still clinging to that little locket as if it can make you worthy of a place here.\"",
+      "[00:08.80-00:10.80] LADY JULIANA (Hurt, Bitter): \"You stole my wedding.\"",
+      "[00:11.20-00:13.40] LADY JULIANA (Defiant): \"Don't pretend you've earned anything.\"",
+      "[00:13.80-00:16.30] LADY IN GOLD GOWN (Smug, Malicious): \"I didn't steal what was never truly yours.\"",
+      "[01:50.90-01:52.50] LADY JULIANA (Whispering, Bewildered): \"Why are you doing this?\"",
+      "[01:52.80-01:54.10] THE BEARDED STRANGER (Simple, Certain): \"Because I want to.\"",
+      "[01:59.80-02:02.10] THE BEARDED STRANGER (O.S., Honorable, Earnest): \"You came here to become a wife.\"",
+      "[02:02.50-02:04.20] THE BEARDED STRANGER (Quiet, Resolute): \"They took that from you.\"",
+      "[02:05.30-02:07.30] THE BEARDED STRANGER (Earnest, Sincere): \"I am offering it back.\"",
+      "[02:07.70-02:09.90] LADY JULIANA (Soft, Hesitant): \"You don't even know me.\"",
+      "[02:10.40-02:12.00] THE BEARDED STRANGER (Quiet, Steady): \"I know enough.\"",
+      "[02:13.20-02:15.50] [ACTION] The Bearded Stranger sinks to one knee on the cathedral aisle, offering the silver ring up to Juliana.",
+      "[02:14.80-02:16.20] [SOUND_FX] A collective, stunned gasp rippling across the entire congregation."
+    ]
+  },
+  {
+    "candidate_id": "ep029_44s_88s",
+    "episode_num": 29,
+    "episode_filename": "episode-029-Episode 1678582.txt",
+    "promo_type": "single_segment",
+    "start_sec": 44.3,
+    "end_sec": 88.0,
+    "start_timestamp": "00:44.30",
+    "end_timestamp": "01:28.00",
+    "timestamp_range_display": "Ep 29 (00:44.30 - 01:28.00)",
+    "duration_sec": 43.7,
+    "segments": [
+      {
+        "episode_num": 29,
+        "start_sec": 44.3,
+        "end_sec": 88.0,
+        "start_timestamp": "00:44.30",
+        "end_timestamp": "01:28.00",
+        "duration_sec": 43.7,
+        "label": "primary"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 20.0,
+      "conflict_escalation": 17.7,
+      "cliffhanger_peak": 13.4,
+      "standalone_clarity": 20.0,
+      "duration_pacing_fit": 20.0
+    },
+    "stage1_score": 91.1,
+    "llm_score": 72.95,
+    "final_score": 80.21,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": false,
+    "spoken_lore_tokens_found": [],
+    "speakers_in_clip": [
+      "JULIANA",
+      "CATHERINE",
+      "GUARD"
+    ],
+    "opening_hook_line": "(00:44.40) JULIANA: \"You cannot just destroy it!\"",
+    "closing_cliffhanger_line": "(01:25.70-01:26.50) JULIANA: \"Please!\" + [01:26.50 SOUND_FX] The heavy iron door slams shut with a deafening metallic thud, and the massive exterior bolt grates locked.",
+    "withheld_payoff_preview": "[01:26.50-01:28.80] CAMERA: Static shot of the locked iron door, deadlocked in total isolation. | [01:28.80-01:33.70] CAMERA: Medium close-up of Juliana kneeling on the floor, clutching her chest as hyperventilation overtakes her. | [01:29.50-01:33.70] ACTION: Juliana trembles uncontrollably, her fingers digging into the collar of her rustic dress as terror washes over her.",
+    "payoff_source": "same_episode",
+    "rationale": "High-converting 43.7s ad confrontation (JULIANA vs. CATHERINE): arrests scroll in the first 3s with 'JULIANA: \"You cannot just destroy it!\"', escalates through 3 high-stakes reversal beats, and snaps to black on 'JULIANA: \"Please!\" + [01:26.50 SOUND_FX] The heavy iron door slams shut with a deafening metallic thud, and the massive...' (withholding same episode payoff).",
+    "editorial_risk_note": "Zero cold-audience confusion: only 0 character name(s) spoken aloud; power dynamic (JULIANA vs. CATHERINE) is immediately legible without prior episodes.",
+    "excerpt_lines": [
+      "[00:44.40-00:46.50] JULIANA (Screaming, Desperate): \"You cannot just destroy it!\"",
+      "[00:47.30-00:49.10] CATHERINE (Whispered, Malicious): \"I can burn it.\"",
+      "[00:50.10-00:53.60] CATHERINE (O.S., Chilling, Relentless): \"And when they find your corpse at the end of the rope...\"",
+      "[00:53.80-00:56.50] CATHERINE (Cruel, Resolute): \"...no one will remember what was written inside.\"",
+      "[00:56.70-00:59.00] JULIANA (Enraged, Defiant): \"You are doing this because I saved the Duchess!\"",
+      "[00:59.30-01:03.40] CATHERINE (Scornful, Arrogant): \"I am doing this because women like you forget their place.\"",
+      "[01:04.50-01:06.50] CATHERINE (Cold, Venomous): \"You were cast out once.\"",
+      "[01:07.20-01:09.10] CATHERINE (Menacing): \"You should have stayed forgotten.\"",
+      "[01:09.80-01:11.40] JULIANA (Steely, Resolute): \"My husband will find me.\"",
+      "[01:12.10-01:14.30] CATHERINE (Scoffing, Amused): \"Your scarred soldier?\"",
+      "[01:14.70-01:18.10] CATHERINE (Derisive, Biting): \"What exactly do you think a penniless veteran can do against Ashbrook?\"",
+      "[01:18.70-01:20.60] GUARD (Gruff, Dismissive): \"Move along, girl.\"",
+      "[01:24.00-01:26.50] [ACTION] The guards shove Juliana violently into the cell; she falls hard onto all fours across the cold, wet stone floor.",
+      "[01:25.70-01:26.50] JULIANA (Crying Out, Broken): \"Please!\""
+    ]
+  },
+  {
+    "candidate_id": "ep001_55s_98s",
+    "episode_num": 1,
+    "episode_filename": "episode-001-Episode 1671703.txt",
+    "promo_type": "single_segment",
+    "start_sec": 54.6,
+    "end_sec": 98.2,
+    "start_timestamp": "00:54.60",
+    "end_timestamp": "01:38.20",
+    "timestamp_range_display": "Ep 01 (00:54.60 - 01:38.20)",
+    "duration_sec": 43.6,
+    "segments": [
+      {
+        "episode_num": 1,
+        "start_sec": 54.6,
+        "end_sec": 98.2,
+        "start_timestamp": "00:54.60",
+        "end_timestamp": "01:38.20",
+        "duration_sec": 43.6,
+        "label": "primary"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 18.0,
+      "conflict_escalation": 20.0,
+      "cliffhanger_peak": 10.9,
+      "standalone_clarity": 20.0,
+      "duration_pacing_fit": 20.0
+    },
+    "stage1_score": 88.9,
+    "llm_score": 73.65,
+    "final_score": 79.75,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": false,
+    "spoken_lore_tokens_found": [],
+    "speakers_in_clip": [
+      "LADY JULIANA",
+      "THE FORMER GROOM",
+      "LADY IN GOLD GOWN",
+      "MATRIARCH"
+    ],
+    "opening_hook_line": "(00:54.70) LADY JULIANA: \"You let me dress in my mother's gown...\"",
+    "closing_cliffhanger_line": "(01:36.20-01:38.20) LADY JULIANA: \"Embarrassed you?\"",
+    "withheld_payoff_preview": "[01:35.80-01:38.60] CAMERA: Close-up on Juliana as she rises, stung by the utter betrayal. | [01:38.60-01:42.50] CAMERA: Medium shot of the Matriarch gesturing toward Clarissa, who stands elegantly in gold. | [01:38.80-01:41.50] MATRIARCH: \"Clarissa knows how to carry herself.\"",
+    "payoff_source": "same_episode",
+    "rationale": "High-converting 43.6s ad confrontation (LADY JULIANA vs. THE FORMER GROOM): arrests scroll in the first 3s with 'LADY JULIANA: \"You let me dress in my mother's gown...\"', escalates through 5 high-stakes reversal beats, and snaps to black on 'LADY JULIANA: \"Embarrassed you?\"' (withholding same episode payoff).",
+    "editorial_risk_note": "Zero cold-audience confusion: only 0 character name(s) spoken aloud; power dynamic (LADY JULIANA vs. THE FORMER GROOM) is immediately legible without prior episodes.",
+    "excerpt_lines": [
+      "[00:54.70-00:56.90] LADY JULIANA (Crushed, Shaking): \"You let me dress in my mother's gown...\"",
+      "[00:57.00-01:00.00] LADY JULIANA (Crying Out): \"You let me believe I was walking toward my husband!\"",
+      "[01:00.10-01:01.80] THE FORMER GROOM (Cold, Callous): \"I changed my mind.\"",
+      "[01:03.40-01:05.60] LADY JULIANA (Betrayed, Piercing): \"You swore you loved me!\"",
+      "[01:06.50-01:08.80] LADY IN GOLD GOWN (Mocking): \"People change their minds, sister.\"",
+      "[01:09.10-01:10.40] LADY JULIANA (Horrified): \"And you knew?\"",
+      "[01:10.60-01:12.10] LADY IN GOLD GOWN (Unapologetic, Cheerful): \"Of course I knew.\"",
+      "[01:13.10-01:14.30] LADY JULIANA (Trembling): \"How long?\"",
+      "[01:15.00-01:18.50] LADY IN GOLD GOWN (Cruel, Poised): \"Long enough to know he was never going to marry you.\"",
+      "[01:19.00-01:21.00] [ACTION] Juliana turns abruptly toward the first row of pews, where her elderly father sits gripping an ornate brass cane.",
+      "[01:20.10-01:21.20] LADY JULIANA (Desperate): \"Father...\"",
+      "[01:21.40-01:23.60] LADY JULIANA (Begging): \"Tell them this is a mistake.\"",
+      "[01:26.00-01:28.90] LADY JULIANA (Choking, Broken): \"Father... please look at me.\"",
+      "[01:29.50-01:30.80] [ACTION] The father tightens his jaw and stony expression, refusing to offer a single word or look."
+    ]
+  },
+  {
+    "candidate_id": "ep043_multi_segment_cold_open_103s_26s",
+    "episode_num": 43,
+    "episode_filename": "episode-043-Episode 1686803.txt",
+    "promo_type": "multi_segment_cold_open",
+    "start_sec": 0.0,
+    "end_sec": 114.96,
+    "start_timestamp": "00:00.00",
+    "end_timestamp": "01:54.96",
+    "timestamp_range_display": "Ep 43 [01:43.40-01:54.96] + Ep 43 [00:00.00-00:26.00]",
+    "duration_sec": 37.56,
+    "segments": [
+      {
+        "episode_num": 43,
+        "start_sec": 103.4,
+        "end_sec": 114.96,
+        "start_timestamp": "01:43.40",
+        "end_timestamp": "01:54.96",
+        "duration_sec": 11.56,
+        "label": "cold_open_teaser"
+      },
+      {
+        "episode_num": 43,
+        "start_sec": 0.0,
+        "end_sec": 26.0,
+        "start_timestamp": "00:00.00",
+        "end_timestamp": "00:26.00",
+        "duration_sec": 26.0,
+        "label": "escalation_arc"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 18.0,
+      "conflict_escalation": 17.95,
+      "cliffhanger_peak": 11.8,
+      "standalone_clarity": 20.0,
+      "duration_pacing_fit": 20.0
+    },
+    "stage1_score": 87.75,
+    "llm_score": 73.86,
+    "final_score": 79.42,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": false,
+    "spoken_lore_tokens_found": [
+      "rupert",
+      "sterling"
+    ],
+    "speakers_in_clip": [
+      "CATHERINE",
+      "POLICE CONSTABLE",
+      "BLOND NOBLEMAN",
+      "ROYAL GUARD"
+    ],
+    "opening_hook_line": "(01:44.80) CATHERINE: \"My Lord?\"",
+    "closing_cliffhanger_line": "(00:24.10-00:25.80) BLOND NOBLEMAN: \"You have all been deceived!\"",
+    "withheld_payoff_preview": "Ep 44 Continuity: Picks up immediately from Episode 43's cliffhanger at the church side exit; Lord Sterling's escape is blocked by the Police Constable, leading into the downfall of the conspirators. | Ep 44 [00:00.00-00:03.20] CAMERA: Low-angle shot framing the towering stone archway as a stern Police Constable steps through the heavy open doors, blocking Lord Sterling's path. | Ep 44 [00:00.00-00:03.20] ACTION: The Police Constable strides firmly down the steps and halts right in front of Lord Sterling, holding his ground.",
+    "payoff_source": "next_episode",
+    "rationale": "[Cold-Open Teaser Stitch] High-converting 37.6s ad confrontation (CATHERINE vs. POLICE CONSTABLE): arrests scroll in the first 3s with 'CATHERINE: \"My Lord?\"', escalates through 2 high-stakes reversal beats, and snaps to black on 'BLOND NOBLEMAN: \"You have all been deceived!\"' (withholding next episode payoff).",
+    "editorial_risk_note": "Zero cold-audience confusion: only 2 character name(s) spoken aloud; power dynamic (CATHERINE vs. POLICE CONSTABLE) is immediately legible without prior episodes.",
+    "excerpt_lines": [
+      "[01:44.80-01:46.20] CATHERINE (Shocked, Murmuring): \"My Lord?\"",
+      "[01:47.00-01:49.00] [SOUND_FX] Heavy iron latch clicking open and wooden door creaking.",
+      "[01:50.40-01:52.50] POLICE CONSTABLE (Firm, Sardonic): \"Going somewhere, Lord Sterling?\"",
+      "[00:00.60-00:02.40] BLOND NOBLEMAN (Hysterical, Panicked): \"You're lying!\"",
+      "[00:02.40-00:03.90] [ACTION] Rupert lunges forward, his facial features contorting in venomous desperation.",
+      "[00:03.90-00:07.40] BLOND NOBLEMAN (Shrieking, Frantic): \"This man is an imposter! Arrest him!\"",
+      "[00:08.20-00:10.50] [ACTION] Alexander stands completely composed in his dark embroidered aristocratic coat, staring Rupert down with unyielding authority.",
+      "[00:10.50-00:13.20] BLOND NOBLEMAN (Enraged, Screaming): \"I said arrest him!\"",
+      "[00:13.80-00:16.00] [ACTION] The Guard Captain brings his ceremonial sword upright to attention, his expression stern and resolute.",
+      "[00:14.20-00:15.80] ROYAL GUARD (Firm, Defiant): \"We will not.\"",
+      "[00:16.20-00:18.00] BLOND NOBLEMAN (Outraged, Stunned): \"I am Lord Rupert Ashburn!\"",
+      "[00:18.10-00:19.00] BLOND NOBLEMAN (Desperate): \"Your Duke!\"",
+      "[00:19.20-00:21.60] [ACTION] The Guard Captain snaps a crisp salute toward Alexander.",
+      "[00:19.20-00:21.50] ROYAL GUARD (Calm, Resolute): \"No. He is your Duke.\""
+    ]
+  },
+  {
+    "candidate_id": "ep028_15s_52s",
+    "episode_num": 28,
+    "episode_filename": "episode-028-Episode 1678581.txt",
+    "promo_type": "single_segment",
+    "start_sec": 15.2,
+    "end_sec": 52.1,
+    "start_timestamp": "00:15.20",
+    "end_timestamp": "00:52.10",
+    "timestamp_range_display": "Ep 28 (00:15.20 - 00:52.10)",
+    "duration_sec": 36.9,
+    "segments": [
+      {
+        "episode_num": 28,
+        "start_sec": 15.2,
+        "end_sec": 52.1,
+        "start_timestamp": "00:15.20",
+        "end_timestamp": "00:52.10",
+        "duration_sec": 36.9,
+        "label": "primary"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 20.0,
+      "conflict_escalation": 17.95,
+      "cliffhanger_peak": 12.7,
+      "standalone_clarity": 19.3,
+      "duration_pacing_fit": 20.0
+    },
+    "stage1_score": 89.95,
+    "llm_score": 72.32,
+    "final_score": 79.37,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": false,
+    "spoken_lore_tokens_found": [
+      "catherine",
+      "rupert"
+    ],
+    "speakers_in_clip": [
+      "JULIANA",
+      "BLOND NOBLEMAN",
+      "DOWAGER DUCHESS"
+    ],
+    "opening_hook_line": "(00:15.30) JULIANA: \"I did not poison her! Look at her eyes, the fever has broken!\"",
+    "closing_cliffhanger_line": "(00:49.50-00:52.10) JULIANA: \"She's still weak, you cannot leave her like this!\"",
+    "withheld_payoff_preview": "[00:52.20-00:56.80] CAMERA: Medium close-up of Rupert smoothing down his black leather gloves, a chilling smile forming on his lips. | [00:52.80-00:53.60] BLOND NOBLEMAN: \"You see?\" | [00:54.00-00:56.60] BLOND NOBLEMAN: \"The poison has clearly damaged her mind.\"",
+    "payoff_source": "same_episode",
+    "rationale": "High-converting 36.9s ad confrontation (JULIANA vs. BLOND NOBLEMAN): arrests scroll in the first 3s with 'JULIANA: \"I did not poison her! Look at her eyes, the fever has broken!\"', escalates through 3 high-stakes reversal beats, and snaps to black on 'JULIANA: \"She's still weak, you cannot leave her like this!\"' (withholding same episode payoff).",
+    "editorial_risk_note": "Zero cold-audience confusion: only 2 character name(s) spoken aloud; power dynamic (JULIANA vs. BLOND NOBLEMAN) is immediately legible without prior episodes.",
+    "excerpt_lines": [
+      "[00:15.30-00:18.40] JULIANA (Furious, Defiant): \"I did not poison her! Look at her eyes, the fever has broken!\"",
+      "[00:18.90-00:20.30] BLOND NOBLEMAN (Sardonic, Chilling): \"A clever story, girl.\"",
+      "[00:20.40-00:22.70] BLOND NOBLEMAN (Threatening): \"But the guards know how to extract the truth.\"",
+      "[00:24.80-00:26.50] DOWAGER DUCHESS (Weak, Straining): \"Rupert...\"",
+      "[00:26.70-00:28.20] DOWAGER DUCHESS (O.S., Commanding): \"Stop this!\"",
+      "[00:28.80-00:30.30] DOWAGER DUCHESS (Desperate, Firm): \"She is innocent.\"",
+      "[00:30.80-00:32.40] DOWAGER DUCHESS (Adamant): \"She saved me!\"",
+      "[00:33.20-00:34.60] JULIANA (Breathless, Relieved): \"Your Grace...\"",
+      "[00:35.00-00:37.40] DOWAGER DUCHESS (Trembling, Shouting): \"I know what happened to me!\"",
+      "[00:38.20-00:40.00] DOWAGER DUCHESS (Fierce, Condemning): \"I was poisoned!\"",
+      "[00:40.30-00:42.20] DOWAGER DUCHESS (Accusing): \"And you... you knew!\"",
+      "[00:43.60-00:45.30] DOWAGER DUCHESS (Choking, Weakening): \"Catherine knew!\"",
+      "[00:45.60-00:47.00] DOWAGER DUCHESS (Gasping): \"They have been—\"",
+      "[00:46.80-00:48.00] [ACTION] The Duchess collapses back onto the pillows, coughing violently and clutching her chest."
+    ]
+  },
+  {
+    "candidate_id": "ep015_44s_86s",
+    "episode_num": 15,
+    "episode_filename": "episode-015-Episode 1671717.txt",
+    "promo_type": "single_segment",
+    "start_sec": 44.2,
+    "end_sec": 86.0,
+    "start_timestamp": "00:44.20",
+    "end_timestamp": "01:26.00",
+    "timestamp_range_display": "Ep 15 (00:44.20 - 01:26.00)",
+    "duration_sec": 41.8,
+    "segments": [
+      {
+        "episode_num": 15,
+        "start_sec": 44.2,
+        "end_sec": 86.0,
+        "start_timestamp": "00:44.20",
+        "end_timestamp": "01:26.00",
+        "duration_sec": 41.8,
+        "label": "primary"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 16.5,
+      "conflict_escalation": 15.9,
+      "cliffhanger_peak": 19.3,
+      "standalone_clarity": 16.5,
+      "duration_pacing_fit": 20.0
+    },
+    "stage1_score": 88.2,
+    "llm_score": 73.16,
+    "final_score": 79.18,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": true,
+    "spoken_lore_tokens_found": [
+      "alexander"
+    ],
+    "speakers_in_clip": [
+      "THUG WITH CAP",
+      "JULIANA",
+      "BALD THUG"
+    ],
+    "opening_hook_line": "(00:44.80) THUG WITH CAP: \"Get out of the way!\"",
+    "closing_cliffhanger_line": "(01:19.00-01:22.40) THUG WITH CAP: \"What? You want to fight us, veteran?\" + [01:24.00 SOUND_FX] Tense, low dramatic cello swell holding into an abrupt cliffhanger cut.",
+    "withheld_payoff_preview": "Ep 16 Continuity: Picks up immediately from Episode 15's cliffhanger where Alexander confronted the three thugs in the moonlit garden while Juliana huddled injured on the ground. | Ep 16 [00:00.00-00:02.10] CAMERA: Wide shot from behind Alexander's trench coat looking toward the three thugs standing across the trampled garden under the full moon. | Ep 16 [00:00.00-00:02.10] ACTION: Alexander stands tall and unyielding, blocking the path to Juliana, while the Thug with Cap steps forward clutching an iron pipe.",
+    "payoff_source": "next_episode",
+    "rationale": "High-converting 41.8s ad confrontation (THUG WITH CAP vs. JULIANA): arrests scroll in the first 3s with 'THUG WITH CAP: \"Get out of the way!\"', escalates through 1 high-stakes reversal beats, and snaps to black on 'THUG WITH CAP: \"What? You want to fight us, veteran?\" + [01:24.00 SOUND_FX] Tense, low dramatic cello swell holding into an...' (withholding next episode payoff).",
+    "editorial_risk_note": "Zero cold-audience confusion: only 1 character name(s) spoken aloud; power dynamic (THUG WITH CAP vs. JULIANA) is immediately legible without prior episodes.",
+    "excerpt_lines": [
+      "[00:44.80-00:46.40] THUG WITH CAP (Menacing Snarl): \"Get out of the way!\"",
+      "[00:46.50-00:47.30] JULIANA (Steely, Fearless): \"No.\"",
+      "[00:47.40-00:49.50] [ACTION] The Thug with Cap violently shoves Juliana back with both hands; she cries out as she loses her balance and crashes hard onto the wet stone path.",
+      "[00:47.80-00:49.00] JULIANA (Gasping Cry): \"Ah!\"",
+      "[00:50.00-00:53.50] [ACTION] Juliana crawls forward on her elbows; fresh crimson blood seeps profusely through her white gauze bandages as she reaches for the ruined blossoms.",
+      "[00:53.50-00:55.70] JULIANA (Broken, Sobbing): \"My mother's plants...\"",
+      "[00:57.30-00:59.80] BALD THUG (Cruel, Laughing): \"Look at her! Crying over weeds!\"",
+      "[01:00.00-01:02.00] [ACTION] The Tall Thug hoists his heavy wooden club above his head to crush the remaining herbs right before Juliana.",
+      "[01:00.00-01:01.00] JULIANA (Screaming): \"Stop!\"",
+      "[01:03.50-01:07.50] [ACTION] Alexander storms forward with lethal intensity, dark hair flying, breath misting in the cold, radiating untamed rage.",
+      "[01:10.50-01:12.60] JULIANA (Whispered Breath, Stunned): \"Alexander...\"",
+      "[01:16.00-01:18.50] [ACTION] Alexander places himself directly between Juliana and the three thugs, staring them down with cold, deadly intent.",
+      "[01:19.00-01:22.40] THUG WITH CAP (Challenging, Arrogant): \"What? You want to fight us, veteran?\"",
+      "[01:24.00-01:26.00] [SOUND_FX] Tense, low dramatic cello swell holding into an abrupt cliffhanger cut."
+    ]
+  },
+  {
+    "candidate_id": "ep045_44s_88s",
+    "episode_num": 45,
+    "episode_filename": "episode-045-Episode 1686805.txt",
+    "promo_type": "single_segment",
+    "start_sec": 43.8,
+    "end_sec": 88.2,
+    "start_timestamp": "00:43.80",
+    "end_timestamp": "01:28.20",
+    "timestamp_range_display": "Ep 45 (00:43.80 - 01:28.20)",
+    "duration_sec": 44.4,
+    "segments": [
+      {
+        "episode_num": 45,
+        "start_sec": 43.8,
+        "end_sec": 88.2,
+        "start_timestamp": "00:43.80",
+        "end_timestamp": "01:28.20",
+        "duration_sec": 44.4,
+        "label": "primary"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 18.5,
+      "conflict_escalation": 19.9,
+      "cliffhanger_peak": 13.4,
+      "standalone_clarity": 17.8,
+      "duration_pacing_fit": 20.0
+    },
+    "stage1_score": 89.6,
+    "llm_score": 72.13,
+    "final_score": 79.12,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": false,
+    "spoken_lore_tokens_found": [
+      "alexander",
+      "ashcroft",
+      "juliana"
+    ],
+    "speakers_in_clip": [
+      "JULIANA",
+      "ALEXANDER",
+      "CATHERINE",
+      "RUPERT"
+    ],
+    "opening_hook_line": "(00:43.80) JULIANA: \"I loved you before I ever knew who you were.\"",
+    "closing_cliffhanger_line": "(01:21.50-01:23.00) RUPERT: \"Juliana?!\" + [01:26.50 SOUND_FX] Loud, echoing thud of cathedral doors swinging open violently.",
+    "withheld_payoff_preview": "[01:26.50-01:30.50] CAMERA: Wide tracking shot down the cathedral aisle as the massive wooden entrance doors slam open, framed by blinding daylight and mist. | [01:27.50-01:31.00] ACTION: A Catholic Bishop in dark vestments steps through the cathedral doors accompanied by an armed Crown officer. | [01:28.40-01:30.80] HIGH PRIEST: \"No one will bow yet!\"",
+    "payoff_source": "same_episode",
+    "rationale": "High-converting 44.4s ad confrontation (JULIANA vs. ALEXANDER): arrests scroll in the first 3s with 'JULIANA: \"I loved you before I ever knew who you were.\"', escalates through 3 high-stakes reversal beats, and snaps to black on 'RUPERT: \"Juliana?!\" + [01:26.50 SOUND_FX] Loud, echoing thud of cathedral doors swinging open violently.' (withholding same episode payoff).",
+    "editorial_risk_note": "Contains 3 spoken proper nouns (alexander, ashcroft, juliana); emotional blocking and same episode cliffhanger override exposition.",
+    "excerpt_lines": [
+      "[00:42.20-00:48.50] [ACTION] Alexander and Juliana close their eyes, breathing together with their foreheads pressed gently against one another.",
+      "[00:43.80-00:46.00] JULIANA (Soft, Heartfelt): \"I loved you before I ever knew who you were.\"",
+      "[00:46.10-00:48.80] ALEXANDER (Soft, Vowing): \"And I loved you before I ever dared to tell you.\"",
+      "[00:49.00-00:51.50] [ACTION] Catherine takes a desperate step forward, clutching her skirts and weeping.",
+      "[00:49.80-00:51.50] CATHERINE (Pleading, Desperate): \"Alexander...\"",
+      "[00:54.00-00:58.00] ALEXANDER (Furious, Cold): \"You poisoned my mother. You tortured my wife.\"",
+      "[00:58.20-00:59.80] CATHERINE (Gasping, Lying): \"I didn't know!\"",
+      "[01:00.00-01:02.40] ALEXANDER (Thunderous, Biting): \"You knew exactly what you were doing!\"",
+      "[01:02.60-01:06.80] ALEXANDER (Booming, Condemning): \"You hurt the two women who mattered most to me: my mother, and my wife.\"",
+      "[01:08.80-01:10.50] CATHERINE (Trembling, Stunned): \"Wife?!\"",
+      "[01:11.20-01:14.50] [ACTION] Alexander and Juliana advance side-by-side between the rows of shocked aristocratic guests.",
+      "[01:11.50-01:14.00] ALEXANDER (Authoritative, Resounding): \"Before the Crown and before God...\"",
+      "[01:14.60-01:20.00] [ACTION] Alexander hoists Juliana's hand triumphantly into the air, presenting her to the nobility.",
+      "[01:14.80-01:20.40] ALEXANDER (Proclaiming, Powerful): \"Lady Juliana Ashcroft is my lawful wife... and the Duchess of Ashburton!\""
+    ]
+  },
+  {
+    "candidate_id": "ep036_multi_segment_cold_open_190s_32s",
+    "episode_num": 36,
+    "episode_filename": "episode-036-Episode 1681369.txt",
+    "promo_type": "multi_segment_cold_open",
+    "start_sec": 0.0,
+    "end_sec": 200.75,
+    "start_timestamp": "00:00.00",
+    "end_timestamp": "03:20.75",
+    "timestamp_range_display": "Ep 36 [03:09.50-03:20.75] + Ep 36 [00:00.00-00:31.70]",
+    "duration_sec": 42.95,
+    "segments": [
+      {
+        "episode_num": 36,
+        "start_sec": 189.5,
+        "end_sec": 200.75,
+        "start_timestamp": "03:09.50",
+        "end_timestamp": "03:20.75",
+        "duration_sec": 11.25,
+        "label": "cold_open_teaser"
+      },
+      {
+        "episode_num": 36,
+        "start_sec": 0.0,
+        "end_sec": 31.7,
+        "start_timestamp": "00:00.00",
+        "end_timestamp": "00:31.70",
+        "duration_sec": 31.7,
+        "label": "escalation_arc"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 16.5,
+      "conflict_escalation": 18.0,
+      "cliffhanger_peak": 10.9,
+      "standalone_clarity": 18.6,
+      "duration_pacing_fit": 20.0
+    },
+    "stage1_score": 84.0,
+    "llm_score": 75.75,
+    "final_score": 79.05,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": false,
+    "spoken_lore_tokens_found": [
+      "rupert",
+      "sterling"
+    ],
+    "speakers_in_clip": [
+      "ALEXANDER",
+      "ALEXANDER'S MOTHER"
+    ],
+    "opening_hook_line": "(03:09.50) ALEXANDER: \"Because before that wedding begins...\"",
+    "closing_cliffhanger_line": "(00:29.20-00:31.70) ALEXANDER'S MOTHER: \"They gave you to the enemy?\"",
+    "withheld_payoff_preview": "Ep 37 Continuity: Following Alexander's vow to return in two days to disrupt the wedding, Rupert and Catherine prepare to cement their coup by inviting high society to celebrate their nuptials and witness Juliana's execution. | Ep 37 [00:00.00-00:05.50] CAMERA: Low-angle shot tilting down to a polished mahogany table as a white-gloved servant places a tall stack of wax-sealed wedding invitations onto a silver tray. | Ep 37 [00:01.50-00:03.20] SOUND_FX: The crisp tap of heavy cardstock envelopes being set down onto silver.",
+    "payoff_source": "next_episode",
+    "rationale": "[Cold-Open Teaser Stitch] High-converting 43.0s ad confrontation (ALEXANDER vs. ALEXANDER'S MOTHER): arrests scroll in the first 3s with 'ALEXANDER: \"Because before that wedding begins...\"', escalates through 3 high-stakes reversal beats, and snaps to black on 'ALEXANDER'S MOTHER: \"They gave you to the enemy?\"' (withholding next episode payoff).",
+    "editorial_risk_note": "Zero cold-audience confusion: only 2 character name(s) spoken aloud; power dynamic (ALEXANDER vs. ALEXANDER'S MOTHER) is immediately legible without prior episodes.",
+    "excerpt_lines": [
+      "[03:09.50-03:12.20] ALEXANDER (Low, Menacing Promise): \"Because before that wedding begins...\"",
+      "[03:13.00-03:16.80] ALEXANDER (Cold, Thunderous Finale): \"...their dead Duke is coming home.\"",
+      "[03:17.00-03:20.75] [ACTION] Alexander stares resolutely ahead into the dark, snowy woods as the camera holds on his grim, determined expression before cutting to black.",
+      "[03:17.00-03:20.75] [SOUND_FX] A heavy, ominous orchestral swell builds to a thunderous cliffhanger sting and reverberates into silence.",
+      "[00:00.00-00:03.80] [ACTION] Alexander's mother leans forward with both hands on the rustic table, searching her son's scarred face in disbelief.",
+      "[00:00.80-00:03.70] ALEXANDER'S MOTHER (Whispering, Distraught): \"Then why did they never find you?\"",
+      "[00:04.80-00:08.20] ALEXANDER (Cold, Bitter): \"Because they made certain no one would look.\"",
+      "[00:09.50-00:11.20] ALEXANDER'S MOTHER (Trembling): \"Who?\"",
+      "[00:13.50-00:17.00] ALEXANDER (Grave, Sinister): \"Sterling... and Rupert.\"",
+      "[00:17.60-00:19.80] ALEXANDER'S MOTHER (Gasping, Stricken): \"Rupert?\"",
+      "[00:21.00-00:23.50] ALEXANDER (Stern, Resolute): \"They knew where I was.\"",
+      "[00:23.70-00:28.80] ALEXANDER (Fierce): \"My position was leaked to the French... before I could expose what I had discovered.\"",
+      "[00:29.20-00:31.70] ALEXANDER'S MOTHER (Horrified): \"They gave you to the enemy?\""
+    ]
+  },
+  {
+    "candidate_id": "ep036_154s_201s",
+    "episode_num": 36,
+    "episode_filename": "episode-036-Episode 1681369.txt",
+    "promo_type": "single_segment",
+    "start_sec": 153.5,
+    "end_sec": 200.75,
+    "start_timestamp": "02:33.50",
+    "end_timestamp": "03:20.75",
+    "timestamp_range_display": "Ep 36 (02:33.50 - 03:20.75)",
+    "duration_sec": 47.25,
+    "segments": [
+      {
+        "episode_num": 36,
+        "start_sec": 153.5,
+        "end_sec": 200.75,
+        "start_timestamp": "02:33.50",
+        "end_timestamp": "03:20.75",
+        "duration_sec": 47.25,
+        "label": "primary"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 12.5,
+      "conflict_escalation": 16.45,
+      "cliffhanger_peak": 19.5,
+      "standalone_clarity": 19.3,
+      "duration_pacing_fit": 20.0
+    },
+    "stage1_score": 87.75,
+    "llm_score": 72.71,
+    "final_score": 78.73,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": true,
+    "spoken_lore_tokens_found": [
+      "alexander",
+      "juliana"
+    ],
+    "speakers_in_clip": [
+      "ALEXANDER'S MOTHER",
+      "ALEXANDER"
+    ],
+    "opening_hook_line": "(02:33.50) ALEXANDER'S MOTHER: \"Two days from now.\"",
+    "closing_cliffhanger_line": "(03:13.00-03:16.80) ALEXANDER: \"...their dead Duke is coming home.\" + [03:17.00 SOUND_FX] A heavy, ominous orchestral swell builds to a thunderous cliffhanger sting and reverberates into silence.",
+    "withheld_payoff_preview": "Ep 37 Continuity: Following Alexander's vow to return in two days to disrupt the wedding, Rupert and Catherine prepare to cement their coup by inviting high society to celebrate their nuptials and witness Juliana's execution. | Ep 37 [00:00.00-00:05.50] CAMERA: Low-angle shot tilting down to a polished mahogany table as a white-gloved servant places a tall stack of wax-sealed wedding invitations onto a silver tray. | Ep 37 [00:01.50-00:03.20] SOUND_FX: The crisp tap of heavy cardstock envelopes being set down onto silver.",
+    "payoff_source": "next_episode",
+    "rationale": "High-converting 47.2s ad confrontation (ALEXANDER'S MOTHER vs. ALEXANDER): arrests scroll in the first 3s with 'ALEXANDER'S MOTHER: \"Two days from now.\"', escalates through 5 high-stakes reversal beats, and snaps to black on 'ALEXANDER: \"...their dead Duke is coming home.\" + [03:17.00 SOUND_FX] A heavy, ominous orchestral swell builds to a...' (withholding next episode payoff).",
+    "editorial_risk_note": "Zero cold-audience confusion: only 2 character name(s) spoken aloud; power dynamic (ALEXANDER'S MOTHER vs. ALEXANDER) is immediately legible without prior episodes.",
+    "excerpt_lines": [
+      "[02:33.50-02:36.00] ALEXANDER'S MOTHER (Deadly Serious): \"Two days from now.\"",
+      "[02:36.80-02:39.80] ALEXANDER (Simmering with Fury): \"They are marrying in two days...\"",
+      "[02:40.50-02:43.00] ALEXANDER (Deadly, Throaty): \"...and killing my wife afterward.\"",
+      "[02:43.20-02:46.80] ALEXANDER'S MOTHER (Pleading, Terrified): \"Alexander, you cannot go back there alone!\"",
+      "[02:48.50-02:50.80] ALEXANDER (Grave, Seething): \"They already took my name.\"",
+      "[02:51.60-02:53.60] ALEXANDER (Roaring with Conviction): \"They stole my home!\"",
+      "[02:54.20-02:56.80] ALEXANDER (Venomous): \"And now they have taken Juliana!\"",
+      "[02:57.00-02:59.50] [ACTION] Close-up of Alexander's gloved hand clenching into a tight, leather-creaking fist.",
+      "[02:57.50-02:59.20] [SOUND_FX] The sharp, taut creak of leather straining under monstrous grip strength.",
+      "[03:00.00-03:04.00] [ACTION] Alexander stands framed in the doorway, staring out into the vast, snow-covered pine forest under the cold moonlight.",
+      "[03:02.00-03:03.50] ALEXANDER (Calm, Chilling): \"Two days.\"",
+      "[03:04.50-03:07.80] ALEXANDER (Vow of Vengeance): \"Then they have two days to celebrate.\"",
+      "[03:09.50-03:12.20] ALEXANDER (Low, Menacing Promise): \"Because before that wedding begins...\"",
+      "[03:13.00-03:16.80] ALEXANDER (Cold, Thunderous Finale): \"...their dead Duke is coming home.\""
+    ]
+  },
+  {
+    "candidate_id": "ep031_118s_160s",
+    "episode_num": 31,
+    "episode_filename": "episode-031-Episode 1681364.txt",
+    "promo_type": "single_segment",
+    "start_sec": 118.2,
+    "end_sec": 160.0,
+    "start_timestamp": "01:58.20",
+    "end_timestamp": "02:40.00",
+    "timestamp_range_display": "Ep 31 (01:58.20 - 02:40.00)",
+    "duration_sec": 41.8,
+    "segments": [
+      {
+        "episode_num": 31,
+        "start_sec": 118.2,
+        "end_sec": 160.0,
+        "start_timestamp": "01:58.20",
+        "end_timestamp": "02:40.00",
+        "duration_sec": 41.8,
+        "label": "primary"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 16.0,
+      "conflict_escalation": 17.35,
+      "cliffhanger_peak": 17.0,
+      "standalone_clarity": 17.9,
+      "duration_pacing_fit": 20.0
+    },
+    "stage1_score": 88.25,
+    "llm_score": 70.69,
+    "final_score": 77.71,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": true,
+    "spoken_lore_tokens_found": [
+      "catherine"
+    ],
+    "speakers_in_clip": [
+      "JULIANA",
+      "CATHERINE"
+    ],
+    "opening_hook_line": "(01:58.40) JULIANA: \"Then why are you so desperate to make me kneel?\"",
+    "closing_cliffhanger_line": "(02:35.20-02:40.00) [CAMERA] Extreme macro close-up of Juliana's wide, trembling eye. The brilliant orange ember of the hot poker reflects clearly in the center of her pupil, holding on the terrifying cliffhanger before an abrupt cut.",
+    "withheld_payoff_preview": "Ep 32 Continuity: Picks up immediately from Episode 31's cliffhanger where Catherine used a glowing branding iron to scorch Juliana's mother's herbal book. | Ep 32 [00:00.00-00:03.00] CAMERA: Close-up on the open botanical ledger lying on the wet stone floor as the glowing red branding tip sizzles against the delicate parchment. | Ep 32 [00:00.00-00:02.80] SOUND_FX: Sizzling, crackling sound of scorched parchment paper.",
+    "payoff_source": "next_episode",
+    "rationale": "High-converting 41.8s ad confrontation (JULIANA vs. CATHERINE): arrests scroll in the first 3s with 'JULIANA: \"Then why are you so desperate to make me kneel?\"', escalates through 1 high-stakes reversal beats, and snaps to black on '[CAMERA] Extreme macro close-up of Juliana's wide, trembling eye. The brilliant orange ember of the hot poker reflects...' (withholding next episode payoff).",
+    "editorial_risk_note": "Zero cold-audience confusion: only 1 character name(s) spoken aloud; power dynamic (JULIANA vs. CATHERINE) is immediately legible without prior episodes.",
+    "excerpt_lines": [
+      "[01:58.40-02:02.00] JULIANA (Piercing, Provocative): \"Then why are you so desperate to make me kneel?\"",
+      "[02:02.00-02:04.00] [ACTION] Catherine's smug expression freezes, her eyes widening in momentary shock and fury as the blow lands squarely.",
+      "[02:04.20-02:10.50] JULIANA (Accusatory, Commanding): \"If you were truly powerful, Catherine, you wouldn't need me to bow.\"",
+      "[02:11.00-02:12.80] CATHERINE (Enraged Scream): \"Enough!\"",
+      "[02:13.20-02:14.50] [SOUND_FX] Hiss of scorched parchment and curling white smoke rising as paper blackens under extreme heat.",
+      "[02:14.50-02:18.00] CATHERINE (Hateful, Malicious): \"This pathetic book is the only thing you still have from your mother.\"",
+      "[02:18.00-02:20.50] [ACTION] Tears spill rapidly down Juliana's cheeks as she reaches forward in vain, restrained by her heavy iron chains.",
+      "[02:18.40-02:20.40] JULIANA (Desperate, Weeping): \"[gasping] Give it back!\"",
+      "[02:20.70-02:23.80] CATHERINE (Gloating, Sadistic): \"There. Finally. Something still hurts you.\"",
+      "[02:24.00-02:25.50] JULIANA (Screaming, Agonized): \"No!\"",
+      "[02:25.60-02:31.20] CATHERINE (Vicious, Final): \"One flame, and your mother's life's work becomes ash.\"",
+      "[02:31.50-02:35.20] [ACTION] Juliana recoils back against the hard dungeon wall, gasping for breath in raw terror as the searing iron stops inches from her eyes."
+    ]
+  },
+  {
+    "candidate_id": "ep003_58s_92s",
+    "episode_num": 3,
+    "episode_filename": "episode-003-Episode 1671705.txt",
+    "promo_type": "single_segment",
+    "start_sec": 58.2,
+    "end_sec": 91.6,
+    "start_timestamp": "00:58.20",
+    "end_timestamp": "01:31.60",
+    "timestamp_range_display": "Ep 03 (00:58.20 - 01:31.60)",
+    "duration_sec": 33.4,
+    "segments": [
+      {
+        "episode_num": 3,
+        "start_sec": 58.2,
+        "end_sec": 91.6,
+        "start_timestamp": "00:58.20",
+        "end_timestamp": "01:31.60",
+        "duration_sec": 33.4,
+        "label": "primary"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 20.0,
+      "conflict_escalation": 17.3,
+      "cliffhanger_peak": 13.4,
+      "standalone_clarity": 20.0,
+      "duration_pacing_fit": 20.0
+    },
+    "stage1_score": 90.7,
+    "llm_score": 68.84,
+    "final_score": 77.58,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": false,
+    "spoken_lore_tokens_found": [],
+    "speakers_in_clip": [
+      "NOBLE MATRIARCH",
+      "LADY JULIANA",
+      "THE BEARDED STRANGER",
+      "ROYAL GUARD",
+      "THE FORMER GROOM"
+    ],
+    "opening_hook_line": "(00:58.30) NOBLE MATRIARCH: \"Guards! Remove her!\"",
+    "closing_cliffhanger_line": "(01:30.40-01:31.60) THE BEARDED STRANGER: \"Are you hurt?\" + [01:24.50 SOUND_FX] A heavy, bone-rattling punch followed by the clatter and thud of the guard collapsing onto the stone floor.",
+    "withheld_payoff_preview": "[01:31.70-01:34.00] CAMERA: Close-up on Juliana's tear-streaked face as she shakes her head gently, overwhelmed with wonder. | [01:31.80-01:33.60] ACTION: Juliana softly shakes her head 'no', her wide blue eyes locked onto him. | [01:34.00-01:36.50] CAMERA: Close-up profile of The Bearded Stranger casting a sharp, menacing glance toward the other guard.",
+    "payoff_source": "same_episode",
+    "rationale": "High-converting 33.4s ad confrontation (NOBLE MATRIARCH vs. LADY JULIANA): arrests scroll in the first 3s with 'NOBLE MATRIARCH: \"Guards! Remove her!\"', escalates through 1 high-stakes reversal beats, and snaps to black on 'THE BEARDED STRANGER: \"Are you hurt?\" + [01:24.50 SOUND_FX] A heavy, bone-rattling punch followed by the clatter and thud of...' (withholding same episode payoff).",
+    "editorial_risk_note": "Zero cold-audience confusion: only 0 character name(s) spoken aloud; power dynamic (NOBLE MATRIARCH vs. LADY JULIANA) is immediately legible without prior episodes.",
+    "excerpt_lines": [
+      "[00:58.20-00:59.80] [ACTION] The Noble Matriarch turns sharply toward the back of the chapel and barks an order.",
+      "[00:58.30-01:00.00] NOBLE MATRIARCH (Shouting, Imperious): \"Guards! Remove her!\"",
+      "[01:00.50-01:02.50] [ACTION] The guards forcefully grab Juliana by both shoulders and drag her backwards.",
+      "[01:00.60-01:02.30] LADY JULIANA (Screaming, Resisting): \"Let me go!\"",
+      "[01:02.40-01:03.50] LADY JULIANA (Desperate, Begging): \"Please! Someone!\"",
+      "[01:03.00-01:04.50] [ACTION] The guards tear her grip away from the pew.",
+      "[01:03.00-01:04.50] [SOUND_FX] Muffled scuffle, rustle of heavy silk and frantic gasps echoing off cathedral stone.",
+      "[01:06.00-01:08.10] [ACTION] The Bearded Stranger steps deliberately into the aisle, his heavy boots echoing.",
+      "[01:09.90-01:12.10] THE BEARDED STRANGER (Low, Thunderous, Imposing): \"Take your hands off her.\"",
+      "[01:13.00-01:16.80] NOBLE MATRIARCH (Indignant, Screeching): \"And who are you to give orders in my family's chapel?!\"",
+      "[01:17.20-01:18.90] ROYAL GUARD (Aggressive, Threatening): \"Stand aside, stranger!\"",
+      "[01:19.30-01:20.90] THE BEARDED STRANGER (Quiet, Deadly): \"I said...\"",
+      "[01:21.80-01:23.90] THE BEARDED STRANGER (Dangerous, Uncompromising): \"...let her go.\"",
+      "[01:24.00-01:25.50] [ACTION] The Bearded Stranger effortlessly blocks the guard's strike and drives a devastating strike into him, dropping the armed guard instantly to the floor."
+    ]
+  },
+  {
+    "candidate_id": "ep026_43s_90s",
+    "episode_num": 26,
+    "episode_filename": "episode-026-Episode 1678579.txt",
+    "promo_type": "single_segment",
+    "start_sec": 43.2,
+    "end_sec": 90.5,
+    "start_timestamp": "00:43.20",
+    "end_timestamp": "01:30.50",
+    "timestamp_range_display": "Ep 26 (00:43.20 - 01:30.50)",
+    "duration_sec": 47.3,
+    "segments": [
+      {
+        "episode_num": 26,
+        "start_sec": 43.2,
+        "end_sec": 90.5,
+        "start_timestamp": "00:43.20",
+        "end_timestamp": "01:30.50",
+        "duration_sec": 47.3,
+        "label": "primary"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 15.0,
+      "conflict_escalation": 16.55,
+      "cliffhanger_peak": 14.5,
+      "standalone_clarity": 20.0,
+      "duration_pacing_fit": 20.0
+    },
+    "stage1_score": 86.05,
+    "llm_score": 71.63,
+    "final_score": 77.4,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": false,
+    "spoken_lore_tokens_found": [
+      "catherine",
+      "rupert"
+    ],
+    "speakers_in_clip": [
+      "JULIANA",
+      "DOWAGER DUCHESS"
+    ],
+    "opening_hook_line": "(00:43.50) JULIANA: \"If the guards hear us, we are both dead.\"",
+    "closing_cliffhanger_line": "(01:20.00-01:25.80) JULIANA: \"Because my family cast me out to rot. I have nothing left in this world but my honor.\" + [01:30.20 SOUND_FX] A sharp, stunned gasp.",
+    "withheld_payoff_preview": "[01:26.50-01:30.80] CAMERA: Medium tracking down Juliana's apron to her hand as she rests it against the bed linens, revealing a distinctive engraved signet ring on her finger. | [01:30.20-01:32.00] SOUND_FX: A sharp, stunned gasp. | [01:30.80-01:35.00] CAMERA: Extreme close-up of the Dowager Duchess gasping sharply, her eyes widening in profound shock as all color drains from her face.",
+    "payoff_source": "same_episode",
+    "rationale": "High-converting 47.3s ad confrontation (JULIANA vs. DOWAGER DUCHESS): arrests scroll in the first 3s with 'JULIANA: \"If the guards hear us, we are both dead.\"', escalates through 4 high-stakes reversal beats, and snaps to black on 'JULIANA: \"Because my family cast me out to rot. I have nothing left in this world but my honor.\" + [01:30.20 SOUND_FX] A...' (withholding same episode payoff).",
+    "editorial_risk_note": "Zero cold-audience confusion: only 2 character name(s) spoken aloud; power dynamic (JULIANA vs. DOWAGER DUCHESS) is immediately legible without prior episodes.",
+    "excerpt_lines": [
+      "[00:43.50-00:47.00] JULIANA (Hushed, Tense Whisper): \"If the guards hear us, we are both dead.\"",
+      "[00:52.50-00:55.50] [ACTION] The Duchess clutches the blanket against her chest, her breathing quickening with dismay.",
+      "[00:56.00-01:02.00] DOWAGER DUCHESS (Trembling, Heartbroken): \"Rupert and Catherine want me dead. They are poisoning me in my own bed, aren't they?\"",
+      "[01:02.60-01:06.70] JULIANA (Reassuring, Steadfast): \"Yes. But the charcoal is fighting the poison. You are safe now.\"",
+      "[01:13.80-01:19.40] DOWAGER DUCHESS (Curious, Searching): \"Then tell me... why is a girl of such noble spirit working as a common maid?\"",
+      "[01:20.00-01:25.80] JULIANA (Painful, Proud): \"Because my family cast me out to rot. I have nothing left in this world but my honor.\"",
+      "[01:27.00-01:30.50] [ACTION] Juliana rests her right hand against the edge of the bedcover, unwittingly placing the unique ring directly within the Duchess's line of sight.",
+      "[01:30.20-01:32.00] [SOUND_FX] A sharp, stunned gasp."
+    ]
+  },
+  {
+    "candidate_id": "ep042_22s_74s",
+    "episode_num": 42,
+    "episode_filename": "episode-042-Episode 1686802.txt",
+    "promo_type": "single_segment",
+    "start_sec": 21.5,
+    "end_sec": 73.8,
+    "start_timestamp": "00:21.50",
+    "end_timestamp": "01:13.80",
+    "timestamp_range_display": "Ep 42 (00:21.50 - 01:13.80)",
+    "duration_sec": 52.3,
+    "segments": [
+      {
+        "episode_num": 42,
+        "start_sec": 21.5,
+        "end_sec": 73.8,
+        "start_timestamp": "00:21.50",
+        "end_timestamp": "01:13.80",
+        "duration_sec": 52.3,
+        "label": "primary"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 20.0,
+      "conflict_escalation": 18.6,
+      "cliffhanger_peak": 11.0,
+      "standalone_clarity": 20.0,
+      "duration_pacing_fit": 18.5
+    },
+    "stage1_score": 88.1,
+    "llm_score": 69.85,
+    "final_score": 77.15,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": false,
+    "spoken_lore_tokens_found": [
+      "alexander",
+      "rupert"
+    ],
+    "speakers_in_clip": [
+      "ROYAL GUARD",
+      "BLOND NOBLEMAN",
+      "CATHERINE",
+      "ALEXANDER",
+      "ALEXANDER'S MOTHER"
+    ],
+    "opening_hook_line": "(00:22.00) ROYAL GUARD: \"We will not.\"",
+    "closing_cliffhanger_line": "(01:04.20-01:12.40) ALEXANDER'S MOTHER: \"Let everyone hear me! This is my son... Alexander Ashburn. The rightful Duke of Ashburn!\"",
+    "withheld_payoff_preview": "[01:13.80-01:17.80] CAMERA: Tight close-up on Alexander, his hand resting on the hilt of his sabre as his eyes burn with fierce, cold retribution. | [01:13.80-01:17.50] ALEXANDER: \"And now, Rupert... we settle what you stole.\"",
+    "payoff_source": "same_episode",
+    "rationale": "High-converting 52.3s ad confrontation (ROYAL GUARD vs. BLOND NOBLEMAN): arrests scroll in the first 3s with 'ROYAL GUARD: \"We will not.\"', escalates through 2 high-stakes reversal beats, and snaps to black on 'ALEXANDER'S MOTHER: \"Let everyone hear me! This is my son... Alexander Ashburn. The rightful Duke of Ashburn!\"' (withholding same episode payoff).",
+    "editorial_risk_note": "Zero cold-audience confusion: only 2 character name(s) spoken aloud; power dynamic (ROYAL GUARD vs. BLOND NOBLEMAN) is immediately legible without prior episodes.",
+    "excerpt_lines": [
+      "[00:22.00-00:23.40] ROYAL GUARD (Stoic, Defiant): \"We will not.\"",
+      "[00:23.50-00:25.20] BLOND NOBLEMAN (Screaming, Outraged): \"I said arrest him!\"",
+      "[00:25.50-00:26.50] BLOND NOBLEMAN (Desperate, Unhinged): \"Why?!\"",
+      "[00:26.70-00:28.80] ROYAL GUARD (Firm, Reverent): \"Because we know who he is.\"",
+      "[00:29.00-00:30.30] CATHERINE (Trembling, Apprehensive): \"Rupert...\"",
+      "[00:30.50-00:33.80] BLOND NOBLEMAN (Denial, Shaken): \"You cannot be him. Alexander died!\"",
+      "[00:34.00-00:39.80] ALEXANDER (Cold, Commanding): \"And yet, here I stand. That is the lie you built your life upon.\"",
+      "[00:40.20-00:42.50] ALEXANDER'S MOTHER (Choked with Tears): \"Alexander...\"",
+      "[00:44.80-00:48.00] [ACTION] Alexander halts his march as his mother reaches him, placing her frail hands gently upon his chest.",
+      "[00:48.00-00:49.00] ALEXANDER (Soft, Reverent): \"Mother.\"",
+      "[00:49.00-00:54.00] [ACTION] His mother gently cradles Alexander's scarred cheek, tears streaming down her face as guests in the background watch in stunned silence.",
+      "[00:49.20-00:53.80] ALEXANDER'S MOTHER (Overcome, Loving): \"Look at you... my beautiful boy.\"",
+      "[00:54.00-01:01.80] ALEXANDER'S MOTHER (Tearful, Proud): \"I saw you again... but seeing you like this... I see my son as he was always meant to be.\"",
+      "[01:02.00-01:04.00] ALEXANDER (Tender, Resolute): \"I have come home, Mother.\""
+    ]
+  },
+  {
+    "candidate_id": "ep046_97s_140s",
+    "episode_num": 46,
+    "episode_filename": "episode-046-Episode 1688395.txt",
+    "promo_type": "single_segment",
+    "start_sec": 96.8,
+    "end_sec": 140.5,
+    "start_timestamp": "01:36.80",
+    "end_timestamp": "02:20.50",
+    "timestamp_range_display": "Ep 46 (01:36.80 - 02:20.50)",
+    "duration_sec": 43.7,
+    "segments": [
+      {
+        "episode_num": 46,
+        "start_sec": 96.8,
+        "end_sec": 140.5,
+        "start_timestamp": "01:36.80",
+        "end_timestamp": "02:20.50",
+        "duration_sec": 43.7,
+        "label": "primary"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 16.0,
+      "conflict_escalation": 17.0,
+      "cliffhanger_peak": 12.0,
+      "standalone_clarity": 20.0,
+      "duration_pacing_fit": 20.0
+    },
+    "stage1_score": 85.0,
+    "llm_score": 70.35,
+    "final_score": 76.21,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": false,
+    "spoken_lore_tokens_found": [],
+    "speakers_in_clip": [
+      "HIGH PRIEST",
+      "ALEXANDER"
+    ],
+    "opening_hook_line": "(01:36.80) HIGH PRIEST: \"And I have the power to undo in one hearing what took you three years to steal!\"",
+    "closing_cliffhanger_line": "(02:14.20-02:18.50) HIGH PRIEST: \"Ten days, Duke. Choose your witnesses well.\" + [02:19.00 SOUND_FX] Shuffling boots and clattering armor as the royal guards turn and retreat down the ruined aisle.",
+    "withheld_payoff_preview": "Ep 47 Continuity: Follows Episode 46's ecclesiastical challenge by the High Priest. While Catherine plots in secret to remain on the estate, the morning brings her disgrace to light as Juliana decides her fate. | Ep 47 [00:00.00-00:01.80] CAMERA: Low-angle focus on a dripping candle burning on a wooden table beside a dark window looking out into the misty night. | Ep 47 [00:01.80-00:08.50] CAMERA: Medium close-up of Catherine in a lace nightgown and lilac robe, holding a goblet of red wine with cold determination.",
+    "payoff_source": "next_episode",
+    "rationale": "High-converting 43.7s ad confrontation (HIGH PRIEST vs. ALEXANDER): arrests scroll in the first 3s with 'HIGH PRIEST: \"And I have the power to undo in one hearing what took you three years to steal!\"', escalates through 2 high-stakes reversal beats, and snaps to black on 'HIGH PRIEST: \"Ten days, Duke. Choose your witnesses well.\" + [02:19.00 SOUND_FX] Shuffling boots and clattering armor as the...' (withholding next episode payoff).",
+    "editorial_risk_note": "Zero cold-audience confusion: only 0 character name(s) spoken aloud; power dynamic (HIGH PRIEST vs. ALEXANDER) is immediately legible without prior episodes.",
+    "excerpt_lines": [
+      "[01:36.80-01:40.40] HIGH PRIEST (Booming, Threatening): \"And I have the power to undo in one hearing what took you three years to steal!\"",
+      "[01:41.80-01:46.50] ALEXANDER (Cold, Resolute): \"A Duke's marriage is judged by the Crown's peerage court, not by a parish priest's seal.\"",
+      "[01:47.00-01:51.50] HIGH PRIEST (Stern, Unflinching): \"The High Religious Council rules on matters of holy matrimony. That includes yours.\"",
+      "[01:52.00-01:58.20] ALEXANDER (Defiant, Commanding): \"Then let it prove that in ten days, before witnesses. Not with six halberds pointed at me in my own chapel.\"",
+      "[01:58.80-02:03.60] HIGH PRIEST (Chilling, Victorious): \"Ten days. And if the council rules against you, this county watches you lose her twice.\"",
+      "[02:04.00-02:06.50] ALEXANDER (Steely, Unfazed): \"I'll take that wager over your decree.\"",
+      "[02:07.20-02:13.20] ALEXANDER (Thunderous, Imposing): \"Lower them! Or explain to the Crown why its own bailiffs raised iron on the Duke it just confirmed!\"",
+      "[02:14.00-02:16.00] [ACTION] The guards slowly lower their weapon points away from the Duke.",
+      "[02:14.20-02:18.50] HIGH PRIEST (Ominous, Warning): \"Ten days, Duke. Choose your witnesses well.\"",
+      "[02:19.00-02:22.00] [SOUND_FX] Shuffling boots and clattering armor as the royal guards turn and retreat down the ruined aisle."
+    ]
+  },
+  {
+    "candidate_id": "ep028_multi_segment_cold_open_129s_28s",
+    "episode_num": 28,
+    "episode_filename": "episode-028-Episode 1678581.txt",
+    "promo_type": "multi_segment_cold_open",
+    "start_sec": 0.0,
+    "end_sec": 138.5,
+    "start_timestamp": "00:00.00",
+    "end_timestamp": "02:18.50",
+    "timestamp_range_display": "Ep 28 [02:08.70-02:18.50] + Ep 28 [00:00.00-00:28.20]",
+    "duration_sec": 38.0,
+    "segments": [
+      {
+        "episode_num": 28,
+        "start_sec": 128.7,
+        "end_sec": 138.5,
+        "start_timestamp": "02:08.70",
+        "end_timestamp": "02:18.50",
+        "duration_sec": 9.8,
+        "label": "cold_open_teaser"
+      },
+      {
+        "episode_num": 28,
+        "start_sec": 0.0,
+        "end_sec": 28.2,
+        "start_timestamp": "00:00.00",
+        "end_timestamp": "00:28.20",
+        "duration_sec": 28.2,
+        "label": "escalation_arc"
+      }
+    ],
+    "sub_scores": {
+      "hook_velocity": 14.0,
+      "conflict_escalation": 17.9,
+      "cliffhanger_peak": 10.0,
+      "standalone_clarity": 19.3,
+      "duration_pacing_fit": 20.0
+    },
+    "stage1_score": 81.2,
+    "llm_score": 71.71,
+    "final_score": 75.51,
+    "scoring_provider": "semantic_reranker:stage2-narrative-arc-v2",
+    "rescued_fallback": false,
+    "dialogue_safe": true,
+    "explicit_cliffhanger_flag": false,
+    "spoken_lore_tokens_found": [
+      "rupert"
+    ],
+    "speakers_in_clip": [
+      "JULIANA",
+      "CATHERINE",
+      "BLOND NOBLEMAN",
+      "DOWAGER DUCHESS"
+    ],
+    "opening_hook_line": "(02:09.10) JULIANA: \"That book is my mother's life's work!\"",
+    "closing_cliffhanger_line": "(00:26.70-00:28.20) DOWAGER DUCHESS: \"Stop this!\"",
+    "withheld_payoff_preview": "Ep 29 Continuity: Follows directly from Episode 28 where Rupert ordered the guards to drag Juliana down to the wet cells while Catherine seized her mother's herbarium. | Ep 29 [00:00.00-00:02.80] CAMERA: High angle tracking shot descending a spiral stone staircase illuminated by flickering wall torches and damp, glistening masonry. | Ep 29 [00:00.00-00:03.50] SOUND_FX: Dripping water echoes hollowly against stone steps alongside the shuffling scuffle of boots.",
+    "payoff_source": "next_episode",
+    "rationale": "[Cold-Open Teaser Stitch] High-converting 38.0s ad confrontation (JULIANA vs. CATHERINE): arrests scroll in the first 3s with 'JULIANA: \"That book is my mother's life's work!\"', escalates through 3 high-stakes reversal beats, and snaps to black on 'DOWAGER DUCHESS: \"Stop this!\"' (withholding next episode payoff).",
+    "editorial_risk_note": "Zero cold-audience confusion: only 1 character name(s) spoken aloud; power dynamic (JULIANA vs. CATHERINE) is immediately legible without prior episodes.",
+    "excerpt_lines": [
+      "[02:09.10-02:11.00] JULIANA (Screaming, Desperate): \"That book is my mother's life's work!\"",
+      "[02:11.40-02:14.20] CATHERINE (Icy, Threatening): \"Then perhaps you can explain every page to the magistrate...\"",
+      "[02:14.60-02:16.70] CATHERINE (Fateful, Vengeful): \"...before he sends you to the gallows.\"",
+      "[00:00.00-00:02.10] [ACTION] Juliana struggles against the guard's grip; the leather-bound herbarium slips from her apron pocket and falls to the stone floor.",
+      "[00:01.80-00:03.20] [SOUND_FX] Heavy thud of the leather journal hitting the polished floor.",
+      "[00:03.20-00:04.60] [ACTION] Catherine plants her embroidered shoe deliberately atop the fallen book.",
+      "[00:04.90-00:06.30] CATHERINE (Mocking, Cruel): \"Look at her, Rupert.\"",
+      "[00:06.60-00:08.10] CATHERINE (Scoffing): \"Soot on her face...\"",
+      "[00:08.40-00:10.00] CATHERINE (Accusing, Smug): \"...herbs in her pockets...\"",
+      "[00:10.20-00:12.30] CATHERINE (Cold): \"...a secret medicine in her hand.\"",
+      "[00:12.70-00:15.00] CATHERINE (Venomous): \"She looks exactly like a poisoner.\"",
+      "[00:15.30-00:18.40] JULIANA (Furious, Defiant): \"I did not poison her! Look at her eyes, the fever has broken!\"",
+      "[00:18.90-00:20.30] BLOND NOBLEMAN (Sardonic, Chilling): \"A clever story, girl.\"",
+      "[00:20.40-00:22.70] BLOND NOBLEMAN (Threatening): \"But the guards know how to extract the truth.\""
+    ]
+  }
+]
